@@ -1,0 +1,79 @@
+name: portfolio
+description: "Ahmed Elabbasy - Portfolio."
+
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+#  flutter_screenutil: ^5.9.3
+  responsive_framework: ^1.5.1
+  cached_network_image: ^3.2.3
+  shimmer: ^3.0.0
+  skeletonizer: ^1.4.3
+  flutter_svg: ^2.0.7
+  carousel_slider: ^5.1.1
+  lottie: ^3.1.3
+  flutter_smart_dialog: ^4.8.2
+  url_launcher: ^6.3.1
+  flutter_slidable: ^4.0.0
+  animate_do:
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.0
+  get_it: ^8.0.2
+  shared_preferences: ^2.3.2
+  font_awesome_flutter: ^10.8.0
+  rive_animated_icon: ^2.0.5
+  dropdown_button2: ^2.3.9
+  animated_text_kit: ^4.2.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner:
+  flutter_gen_runner:
+  injectable_generator:
+
+flutter_gen:
+  output: lib/core/resources/
+  line_length: 80
+  # Optional
+  integrations:
+    flutter_svg: true
+    rive: true
+    lottie: true
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+#    - assets/translations/
+    - assets/lottie/
+    - assets/fonts/
+
+  fonts:
+    - family: Ping
+      fonts:
+        - asset: assets/fonts/Ping-Black.otf
+          weight: 900
+        - asset: assets/fonts/Ping-Bold.otf
+          weight: 700
+        - asset: assets/fonts/Ping-Medium.otf
+          weight: 600
+        - asset: assets/fonts/Ping-Regular.otf
+          weight: 500
+        - asset: assets/fonts/Ping-Light.otf
+          weight: 400
