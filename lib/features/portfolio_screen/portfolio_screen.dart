@@ -4,58 +4,57 @@ import 'package:portfolio/exports.dart';
 class PortfolioScreen extends StatelessWidget {
   const PortfolioScreen({super.key, this.onScrollDown});
 
-  final void Function()? onScrollDown;
+  final VoidCallback? onScrollDown;
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: AppColors.blackColor,
-      child: Column(
-        children: [
-          Expanded(
-            child: Padding(
-              padding: EdgeInsetsDirectional.only(start: 40),
-              child: Column(
-                children: [
-                  Text(
-                    'MY PROJECTS WILL BE HERE SOON'.toUpperCase(),
-                    textAlign: TextAlign.justify,
-                    style: AppTextStyles.whiteW400S16PxStyle.copyWith(
-                      fontSize: 12,
-                    ),
-                  )
-                ],
-              ),
+    return Column(
+      children: [
+        Expanded(
+          child: Padding(
+            padding: EdgeInsetsDirectional.only(start: 40, top: 20),
+            child: Column(
+              children: [
+                Assets.lottie.developer
+                    .lottie(height: 180, fit: BoxFit.fitHeight),
+                /*Text(
+                  'Portfolio'.toUpperCase(),
+                  textAlign: TextAlign.justify,
+                  style: AppTextStyles.whiteW400S32PxStyle,
+                ),*/
+                Text(
+                  'Here are few samples of my previous work'.toUpperCase(),
+                  textAlign: TextAlign.justify,
+                  style: AppTextStyles.whiteW400S18PxStyle,
+                ),
+                16.ph,
+                AppsSliderWidget(),
+              ],
             ),
           ),
-          // Scroll down to view my portfolio
-          // Scroll Down
-          FadeInUpBig(
-            duration: Duration(seconds: 12),
-            child: Text(
-              'Scroll down to contact with me now'.toUpperCase(),
-              textAlign: TextAlign.justify,
-              style: AppTextStyles.whiteW400S16PxStyle.copyWith(
-                fontSize: 12,
-              ),
+        ),
+        16.ph,
+        FadeInUpBig(
+          duration: Duration(seconds: 20),
+          child: Text(
+            'Scroll down to contact me now'.toUpperCase(),
+            textAlign: TextAlign.justify,
+            style: AppTextStyles.whiteW400S16PxStyle.copyWith(
+              fontSize: 12,
             ),
           ),
-      Material(
-      color: Colors.transparent,
-          child:
-          RiveAnimatedIcon(
-            riveIcon: RiveIcon.call,
-            width: 40,
-            height: 50,
-            color: AppColors.whiteColor,
-            strokeWidth: 2,
-            loopAnimation: true,
-            onTap: onScrollDown ?? () {},
-            onHover: (value) {},
-          ),
-          ),
-        ],
-      ),
+        ),
+        RiveAnimatedIcon(
+          riveIcon: RiveIcon.call,
+          width: 40,
+          height: 50,
+          color: AppColors.whiteColor,
+          strokeWidth: 2,
+          loopAnimation: true,
+          onTap: onScrollDown ?? () {},
+          onHover: (value) {},
+        ),
+      ],
     );
   }
 }

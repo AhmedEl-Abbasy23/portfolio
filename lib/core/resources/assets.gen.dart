@@ -108,12 +108,30 @@ class $AssetsLottieGen {
   LottieGenImage get achivements =>
       const LottieGenImage('assets/lottie/achivements.json');
 
+  /// File path: assets/lottie/developer.json
+  LottieGenImage get developer =>
+      const LottieGenImage('assets/lottie/developer.json');
+
   /// File path: assets/lottie/hand-wave.json
   LottieGenImage get handWave =>
       const LottieGenImage('assets/lottie/hand-wave.json');
 
+  /// File path: assets/lottie/portfolio.json
+  LottieGenImage get portfolio =>
+      const LottieGenImage('assets/lottie/portfolio.json');
+
+  /// File path: assets/lottie/space-boy-developer.json
+  LottieGenImage get spaceBoyDeveloper =>
+      const LottieGenImage('assets/lottie/space-boy-developer.json');
+
   /// List of all assets
-  List<LottieGenImage> get values => [achivements, handWave];
+  List<LottieGenImage> get values => [
+    achivements,
+    developer,
+    handWave,
+    portfolio,
+    spaceBoyDeveloper,
+  ];
 }
 
 class Assets {

@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           ],
         );
       },
-      initialRoute: Routes.homeScreen,
+      initialRoute: Routes.layoutScreen,
       onGenerateRoute: appRouter.generateRoute,
       navigatorKey: AppRouter.navigatorKey,
     );

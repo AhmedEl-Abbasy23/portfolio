@@ -33,18 +33,15 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Material(
-                color: Colors.transparent,
-                child: RiveAnimatedIcon(
-                  riveIcon: RiveIcon.profile,
-                  width: 50,
-                  height: 30,
-                  color: AppColors.whiteColor,
-                  strokeWidth: 3,
-                  loopAnimation: true,
-                  onTap: () {},
-                  onHover: (value) {},
-                ),
+              RiveAnimatedIcon(
+                riveIcon: RiveIcon.profile,
+                width: 50,
+                height: 30,
+                color: AppColors.whiteColor,
+                strokeWidth: 3,
+                loopAnimation: true,
+                onTap: () {},
+                onHover: (value) {},
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8),

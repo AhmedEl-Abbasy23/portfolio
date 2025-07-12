@@ -8,10 +8,10 @@ class AppRouter {
     "Navigating to route: ${settings.name}".logIfDebug();
     final arguments = settings.arguments;
     switch (settings.name) {
-      case Routes.homeScreen:
+      case Routes.layoutScreen:
         return MaterialPageRoute(
           builder: (context) {
-            return HomeScreen();
+            return LayoutScreen();
           },
         );
       default:

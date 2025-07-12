@@ -15,13 +15,6 @@ class _LayoutScreenState extends State<LayoutScreen> {
 
   bool isAnimating = false;
 
-  final List<Widget> sections = [
-    WelcomeScreen(),
-    HomeScreen(),
-    AboutScreen(),
-    // PortfolioScreen(),
-  ];
-
   void _onScroll(PointerScrollEvent event) {
     if (isAnimating) return;
 
@@ -29,7 +22,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
 
     if (scroll > 0) {
       // Scroll down
-      if (pageController.page!.round() < sections.length - 1) {
+      if (pageController.page!.round() < 5 - 1) { // 5 sections
         _goToPage(pageController.page!.toInt() + 1);
       }
     } else if (scroll < 0) {
@@ -93,7 +86,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
         child: PageView.builder(
           scrollDirection: Axis.vertical,
           controller: pageController,
-          itemCount: sections.length,
+          itemCount: 5,
           onPageChanged: (int newIndex) {
             currentPageNotifier.value = newIndex;
           },
@@ -117,6 +110,12 @@ class _LayoutScreenState extends State<LayoutScreen> {
               PortfolioScreen(
                 onScrollDown: () {
                   _goToPage(4, withLongAnimation: true);
+                },
+              ),
+              ContactScreen(
+                onScrollDown: () {
+                  // 4 is the last page
+                  _goToPage(0, withLongAnimation: true);
                 },
               ),
             ][index];

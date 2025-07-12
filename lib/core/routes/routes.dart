@@ -1,4 +1,4 @@
 class Routes {
   // |> home screen
-  static const String homeScreen = '/';
+  static const String layoutScreen = '/';
 }

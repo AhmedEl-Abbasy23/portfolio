@@ -34,18 +34,15 @@ class _AchievementsSectionWidgetState extends State<AchievementsSectionWidget> {
               ? Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Material(
-                      color: Colors.transparent,
-                      child: RiveAnimatedIcon(
-                        riveIcon: RiveIcon.check,
-                        width: 40,
-                        height: 50,
-                        color: Colors.green,
-                        strokeWidth: 3,
-                        loopAnimation: true,
-                        onTap: () {},
-                        onHover: (value) {},
-                      ),
+                    RiveAnimatedIcon(
+                      riveIcon: RiveIcon.check,
+                      width: 40,
+                      height: 50,
+                      color: Colors.green,
+                      strokeWidth: 3,
+                      loopAnimation: true,
+                      onTap: () {},
+                      onHover: (value) {},
                     ),
                     Padding(
                             padding: const EdgeInsets.only(top: 6),

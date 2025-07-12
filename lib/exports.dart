@@ -7,6 +7,7 @@ export 'dart:developer';
 export 'package:flutter/foundation.dart';
 export 'package:portfolio/core/helpers/extension.dart';
 export 'package:get_it/get_it.dart';
+export 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 export 'package:animate_do/animate_do.dart';
 export 'package:portfolio/core/utils/constants.dart';
 export 'package:url_launcher/url_launcher.dart';
@@ -43,3 +44,7 @@ export 'package:portfolio/features/about_screen/widgets/achievements_section_wid
 export 'package:portfolio/features/home_screen/widgets/vertical_white_container.dart';
 export 'package:portfolio/features/home_screen/widgets/developer_companies_widget.dart';
 export 'package:portfolio/features/home_screen/widgets/instructor_companies_widget.dart';
+export 'package:portfolio/features/portfolio_screen/widgets/apps_slider_widget.dart';
+export 'package:portfolio/features/contact_screen/contact_screen.dart';
+
+
