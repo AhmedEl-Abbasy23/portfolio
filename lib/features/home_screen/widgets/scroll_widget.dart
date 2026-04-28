@@ -9,7 +9,7 @@ class ScrollWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FadeInUpBig(
-      duration: Duration(seconds: 1), // TODO. 15 seconds.
+      duration: Duration(seconds: 15),
       child: Padding(
         padding: const EdgeInsets.only(top: 20),
         child: Column(

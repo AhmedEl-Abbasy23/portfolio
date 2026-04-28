@@ -10,8 +10,8 @@ class LayoutScreen extends StatefulWidget {
 }
 
 class _LayoutScreenState extends State<LayoutScreen> {
-  final PageController pageController = PageController(initialPage: 4); // TODO. 0
-  final ValueNotifier<int> currentPageNotifier = ValueNotifier<int>(4);// TODO. 0
+  final PageController pageController = PageController(initialPage: 0);
+  final ValueNotifier<int> currentPageNotifier = ValueNotifier<int>(0);
 
   bool isAnimating = false;
 
