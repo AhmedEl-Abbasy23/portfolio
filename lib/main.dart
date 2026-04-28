@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/exports.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = MyBlocObserver();
 
   await setupDI();
-
+  await CursorManager.init();
   runApp(MyApp(appRouter: AppRouter()));
 }
 

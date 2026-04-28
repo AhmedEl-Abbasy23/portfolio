@@ -14,7 +14,7 @@ class DialogAndBottomSheets {
         SnackBar(
           content: Text(
             text,
-            style: const TextStyle(fontSize: 18, color: AppColors.whiteColor),
+            style: TextStyle(fontSize: 18.fs, color: AppColors.whiteColor),
           ),
           duration: const Duration(seconds: 4),
           // backgroundColor: AppColors.greyColor,

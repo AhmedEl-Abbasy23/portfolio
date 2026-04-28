@@ -9,79 +9,95 @@ class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        (context.height * 0.1).ph,
+        /// Header
         Stack(
           alignment: Alignment.center,
           children: [
             Assets.lottie.portfolio.lottie(
-              height: 280,
-              width: 500,
+              height: 260,
               fit: BoxFit.fitHeight,
             ),
             PositionedDirectional(
               bottom: 0,
-              child: Text(
-                'Get in Touch'.toUpperCase(),
-                textAlign: TextAlign.justify,
-                style: AppTextStyles.whiteW400S32PxStyle,
+              child: Column(
+                children: [
+                  Text(
+                    'LET’S BUILD SOMETHING'.toUpperCase(),
+                    style: AppTextStyles.whiteW400S16PxStyle.copyWith(
+                      letterSpacing: 2,
+                      color: Colors.white70,
+                    ),
+                  ),
+                  4.ph,
+                  Text(
+                    'Get in Touch',
+                    style: AppTextStyles.whiteW400S32PxStyle.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
         ),
-        24.ph,
+
+        32.ph,
+        /// Platforms
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 60),
-          child: Row(
-            spacing: 16,
-            children: List.generate(
-              platforms.length,
-              (index) => Expanded(
-                child: InkWell(
-                  onTap: () {
-                  },
-                  child: Container(
-                    height: 200,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: AppColors.whiteColor.withValues(alpha: 0.9),
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      spacing: 8,
-                      children: [
-                        FaIcon(
-                          icons[index],
-                          size: 50,
-                          color: index == 0 ? AppColors.urlColor : index == 3 ? Colors.green : Colors.black,
-                        ),
-                        Text(
-                          platforms[index],
-                          style: AppTextStyles.blackW700S14PxStyle,
-                        ),
-                      ],
-                    ),
-                  ),
+          padding: EdgeInsets.symmetric(
+            horizontal: context.width > 800 ? 60 : 20,
+          ),
+          child: FadeInLeft(
+            duration: Duration(milliseconds: 800),
+            child: Wrap(
+              spacing: 16,
+              runSpacing: 16,
+              children: List.generate(
+                PortfolioData.platforms.length,
+                    (index) => ContactCardWidget(
+                  title: PortfolioData.platforms[index],
+                  icon: PortfolioData.icons[index],
+                  onTap: () => _handleTap(index),
                 ),
               ),
             ),
           ),
         ),
-        30.ph,
+
+        32.ph,
+
+        /// CTA Text
         Text(
-          'Let\'s work together, to create something amazing'
-              .toUpperCase(),
-          textAlign: TextAlign.justify,
-          style: AppTextStyles.whiteW400S18PxStyle,
+          'Available for freelance & full-time opportunities',
+          textAlign: TextAlign.center,
+          style: AppTextStyles.whiteW400S16PxStyle.copyWith(
+            color: Colors.white70,
+          ),
         ),
+
+        8.ph,
+
+        Text(
+          'Let’s create something people love 🚀',
+          textAlign: TextAlign.center,
+          style: AppTextStyles.whiteW400S18PxStyle.copyWith(
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+
         Spacer(),
+
+        /// Back to top
         FadeInUpBig(
-          duration: Duration(seconds: 10),
+          duration: Duration(milliseconds: 800),
           child: RiveAnimatedIcon(
             riveIcon: RiveIcon.arrowUp,
             width: 40,
             height: 50,
-            color: AppColors.whiteColor,
+            color: AppColors.whiteColor.withValues(alpha: 0.7),
             strokeWidth: 2,
             loopAnimation: true,
             onTap: onScrollDown ?? () {},
@@ -91,18 +107,22 @@ class ContactScreen extends StatelessWidget {
       ],
     );
   }
+
+  /// Handle actions
+  void _handleTap(int index) {
+    switch (index) {
+      case 0:
+        launchUrl(Uri.parse('https://linkedin.com/in/YOUR_USERNAME'));
+        break;
+      case 1:
+        launchUrl(Uri.parse('https://github.com/YOUR_USERNAME'));
+        break;
+      case 2:
+        launchUrl(Uri.parse('mailto:ahmed.elabbasy23@gmail.com'));
+        break;
+      case 3:
+        launchUrl(Uri.parse('https://wa.me/201288278807'));
+        break;
+    }
+  }
 }
-
-final List<String> platforms = [
-  'LinkedIn',
-  'GitHub',
-  'ahmed.elabbasy23@gmail.com',
-  '+201288278807',
-];
-
-final List<IconData> icons = [
-  FontAwesomeIcons.linkedin,
-  FontAwesomeIcons.github,
-  FontAwesomeIcons.envelope,
-  FontAwesomeIcons.whatsapp,
-];

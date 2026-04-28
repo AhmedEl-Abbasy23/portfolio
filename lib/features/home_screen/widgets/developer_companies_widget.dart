@@ -10,13 +10,35 @@ class DeveloperCompaniesWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          '+3 Years in Mobile Apps Development'.toUpperCase(),
-          textAlign: TextAlign.justify,
-          style: AppTextStyles.whiteW400S18PxStyle,
+          'WORKED WITH',
+          style: AppTextStyles.whiteW400S16PxStyle.copyWith(
+            color: AppColors.whiteColor.withValues(alpha: 0.6),
+            letterSpacing: 2,
+          ),
+        ),
+        4.ph,
+        RichText(
+          text: TextSpan(
+            style: AppTextStyles.whiteW400S18PxStyle,
+            children: [
+              TextSpan(
+                text: '+4 ',
+                style: AppTextStyles.blueW500S26PxStyle.copyWith(
+                  fontWeight: FontWeight.w800,
+                  fontSize: 20.fs,
+                ),
+              ),
+              TextSpan(
+                text: 'YEARS IN SOFTWARE DEVELOPMENT',
+                style: AppTextStyles.whiteW400S18PxStyle,
+              ),
+            ],
+          ),
         ),
         8.ph,
-        Row(
+        Wrap(
           spacing: 16,
+          runSpacing: 16,
           children: [
             Assets.images.magdsoftLogo.image(
               height: 30,
@@ -35,6 +57,8 @@ class DeveloperCompaniesWidget extends StatelessWidget {
             ),
             VerticalWhiteDivider(),
             Assets.images.neopLogo.image(height: 24, width: 50),
+            VerticalWhiteDivider(),
+            Assets.images.bsnsWheelLogo.image(height: 24, width: 90),
           ],
         ),
       ],

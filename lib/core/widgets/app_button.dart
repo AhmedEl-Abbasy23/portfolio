@@ -3,6 +3,7 @@ import 'package:portfolio/exports.dart';
 
 class AppButton extends StatelessWidget {
   final double? borderRadius;
+  final double? borderWidth;
   final Color? backgroundColor;
   final double? horizontalPadding;
   final double? verticalPadding;
@@ -24,6 +25,7 @@ class AppButton extends StatelessWidget {
   const AppButton({
     super.key,
     this.borderRadius,
+    this.borderWidth,
     this.backgroundColor,
     this.horizontalPadding,
     this.verticalPadding,
@@ -48,60 +50,65 @@ class AppButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: isActive ? onPressed : () {},
       style: ButtonStyle(
-          fixedSize: WidgetStateProperty.all(
-            Size(width ?? double.maxFinite, height ?? 60),
+        fixedSize: width != null
+            ? WidgetStateProperty.all(Size(width!, height ?? 60))
+            // Size(width ?? double.maxFinite, height ?? 60),
+            : null,
+        backgroundColor: WidgetStateProperty.resolveWith<Color?>((states) {
+          if (states.contains(WidgetState.hovered)) {
+            return AppColors.primaryColor;
+          }
+          return isActive
+              ? backgroundColor ?? AppColors.primaryColor
+              : AppColors.primaryColor.withValues(alpha: 0.4);
+        }),
+        foregroundColor: WidgetStateProperty.all(
+          splashColor ?? AppColors.whiteColor.withValues(alpha: 0.2),
+        ),
+        padding: WidgetStateProperty.all(
+          EdgeInsets.symmetric(
+            horizontal: horizontalPadding ?? 8,
+            vertical: verticalPadding ?? 0,
           ),
-          backgroundColor: WidgetStateProperty.resolveWith<Color?>((states) {
-            if (states.contains(WidgetState.hovered)) {
-              return AppColors.primaryColor;
-            }
-            return isActive
-                ? backgroundColor ?? AppColors.primaryColor
-                : AppColors.primaryColor.withValues(alpha: 0.4);
-          }),
-          foregroundColor: WidgetStateProperty.all(
-            splashColor ?? AppColors.whiteColor.withValues(alpha: 0.2),
-          ),
-          padding: WidgetStateProperty.all(
-            EdgeInsets.symmetric(
-              horizontal: horizontalPadding ?? 16,
-              vertical: verticalPadding ?? 0,
+        ),
+        shape: WidgetStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(borderRadius ?? 4),
+            side: BorderSide(
+              color:
+                  borderColor ?? AppColors.primaryColor.withValues(alpha: 0.5),
+              width: borderWidth ?? 1,
             ),
           ),
-          shape: WidgetStateProperty.all(
-            RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(borderRadius ?? 4),
-              side: BorderSide(
-                color: borderColor ?? AppColors.primaryColor.withValues(alpha: 0.5),
-              ),
-            ),
-          ),
-          alignment: Alignment.center,
+        ),
+        alignment: Alignment.center,
       ),
       child: buttonIcon == null
           ? Padding(
-            padding: EdgeInsetsDirectional.only(top: Sizes.isLargeDesktop(context) ? 4 : 6),
-            child: Text(
+              padding: EdgeInsetsDirectional.only(
+                  top: Sizes.isLargeDesktop(context) ? 4 : 6),
+              child: Text(
+                buttonText,
+                textAlign: TextAlign.center,
+                style: textStyle ??
+                    AppTextStyles.btnTextStyle.copyWith(fontSize: fontSize),
+              ),
+            )
+          : Padding(
+              padding: EdgeInsetsDirectional.only(
+                  top: Sizes.isLargeDesktop(context) ? 4 : 6),
+              child: Row(
+                children: [
+                  Text(
                     buttonText,
                     textAlign: TextAlign.center,
                     style: textStyle ??
-              AppTextStyles.btnTextStyle.copyWith(fontSize: fontSize),
+                        AppTextStyles.btnTextStyle.copyWith(fontSize: fontSize),
                   ),
-          )
-          : Padding(
-        padding: EdgeInsetsDirectional.only(top: Sizes.isLargeDesktop(context) ? 4 : 6),
-            child: Row(
-                    children: [
-            Text(
-              buttonText,
-              textAlign: TextAlign.center,
-              style: textStyle ??
-                  AppTextStyles.btnTextStyle.copyWith(fontSize: fontSize),
+                  // TODO. Add icon
+                ],
+              ),
             ),
-            // TODO. Add icon
-                    ],
-                  ),
-          ),
     );
   }
 }
@@ -146,12 +153,12 @@ class AppLoadingButton extends StatelessWidget {
           Size(width ?? double.maxFinite, height ?? 60),
         ),
         overlayColor: WidgetStateProperty.resolveWith<Color?>(
-              (states) {
+          (states) {
             if (states.contains(WidgetState.pressed)) {
               return backgroundColor ??
                   AppColors.secondaryColor.withValues(
                       alpha:
-                      0.7); // Change to desired splash color or keep transparent
+                          0.7); // Change to desired splash color or keep transparent
             }
             return null; // Use default overlay color
           },

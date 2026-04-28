@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/exports.dart';
+import 'package:portfolio/features/portfolio_screen/widgets/portfolio_view_widget.dart';
 
 class PortfolioScreen extends StatelessWidget {
   const PortfolioScreen({super.key, this.onScrollDown});
@@ -9,38 +10,17 @@ class PortfolioScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Expanded(
-          child: Padding(
-            padding: EdgeInsetsDirectional.only(start: 40, top: 20),
-            child: Column(
-              children: [
-                Assets.lottie.developer
-                    .lottie(height: 180, fit: BoxFit.fitHeight),
-                /*Text(
-                  'Portfolio'.toUpperCase(),
-                  textAlign: TextAlign.justify,
-                  style: AppTextStyles.whiteW400S32PxStyle,
-                ),*/
-                Text(
-                  'Here are few samples of my previous work'.toUpperCase(),
-                  textAlign: TextAlign.justify,
-                  style: AppTextStyles.whiteW400S18PxStyle,
-                ),
-                16.ph,
-                AppsSliderWidget(),
-              ],
-            ),
-          ),
-        ),
+        Expanded(child: PortfolioViewWidget()),
         16.ph,
         FadeInUpBig(
-          duration: Duration(seconds: 20),
+          duration: Duration(seconds: 10),
           child: Text(
             'Scroll down to contact me now'.toUpperCase(),
             textAlign: TextAlign.justify,
             style: AppTextStyles.whiteW400S16PxStyle.copyWith(
-              fontSize: 12,
+              fontSize: 10.fs,
             ),
           ),
         ),

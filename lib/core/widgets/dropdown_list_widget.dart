@@ -136,7 +136,7 @@ class _DropdownListWidgetState extends State<DropdownListWidget> {
                         widget.currentValue,
                         style: AppTextStyles.blackW700S14PxStyle.copyWith(
                           fontSize: StorageHelper.getLanguagePrefs() == 'en'
-                              ? 13
+                              ? 13.fs
                               : null,
                         ),
                       )
@@ -146,7 +146,7 @@ class _DropdownListWidgetState extends State<DropdownListWidget> {
                         maxLines: 1,
                         style: AppTextStyles.blackW700S14PxStyle.copyWith(
                           fontSize: StorageHelper.getLanguagePrefs() == 'en'
-                              ? 13
+                              ? 13.fs
                               : null,
                         ),
                       ),
@@ -194,7 +194,7 @@ class _DropdownListWidgetState extends State<DropdownListWidget> {
                       item,
                       style: AppTextStyles.blackW400S14PxStyle.copyWith(
                         fontSize: StorageHelper.getLanguagePrefs() == 'en'
-                            ? 13.sp
+                            ? 13.fs
                             : null,
                       ),
                     ),*/

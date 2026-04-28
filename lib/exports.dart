@@ -46,5 +46,17 @@ export 'package:portfolio/features/home_screen/widgets/developer_companies_widge
 export 'package:portfolio/features/home_screen/widgets/instructor_companies_widget.dart';
 export 'package:portfolio/features/portfolio_screen/widgets/apps_slider_widget.dart';
 export 'package:portfolio/features/contact_screen/contact_screen.dart';
+export 'package:portfolio/features/home_screen/widgets/scroll_widget.dart';
+export 'package:portfolio/features/about_screen/widgets/skills_chips_widget.dart';
+export 'package:portfolio/features/about_screen/widgets/features_chips_widget.dart';
+export 'package:portfolio/core/storage/portfolio_data.dart';
+export 'package:portfolio/features/portfolio_screen/widgets/project_card_widget.dart';
+export 'package:portfolio/features/portfolio_screen/widgets/portfolio_waiting_widget.dart';
+export 'core/main_services/cursor_manager.dart';
+export 'package:portfolio/features/portfolio_screen/sub_screens/project_details_screen.dart';
+export 'package:portfolio/features/contact_screen/widgets/contact_card_widget.dart';
+export 'package:portfolio/features/portfolio_screen/widgets/wave_carousel_widget.dart';
+export 'package:portfolio/core/widgets/image_network_zoom_widget.dart';
+
 
 

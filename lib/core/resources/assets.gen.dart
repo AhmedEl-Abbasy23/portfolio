@@ -7,8 +7,11 @@
 // ignore_for_file: type=lint
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:lottie/lottie.dart' as _lottie;
+import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
 class $AssetsFontsGen {
   const $AssetsFontsGen();
@@ -38,8 +41,59 @@ class $AssetsFontsGen {
   ];
 }
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/achievement-1.svg
+  SvgGenImage get achievement1 =>
+      const SvgGenImage('assets/icons/achievement-1.svg');
+
+  /// File path: assets/icons/achievement-2.svg
+  SvgGenImage get achievement2 =>
+      const SvgGenImage('assets/icons/achievement-2.svg');
+
+  /// File path: assets/icons/achievement-3.svg
+  SvgGenImage get achievement3 =>
+      const SvgGenImage('assets/icons/achievement-3.svg');
+
+  /// File path: assets/icons/achievement-4.svg
+  SvgGenImage get achievement4 =>
+      const SvgGenImage('assets/icons/achievement-4.svg');
+
+  /// File path: assets/icons/achievement-5.svg
+  SvgGenImage get achievement5 =>
+      const SvgGenImage('assets/icons/achievement-5.svg');
+
+  /// File path: assets/icons/achievement-6.svg
+  SvgGenImage get achievement6 =>
+      const SvgGenImage('assets/icons/achievement-6.svg');
+
+  /// File path: assets/icons/achievement-7.svg
+  SvgGenImage get achievement7 =>
+      const SvgGenImage('assets/icons/achievement-7.svg');
+
+  /// File path: assets/icons/achievement-8.svg
+  SvgGenImage get achievement8 =>
+      const SvgGenImage('assets/icons/achievement-8.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [
+    achievement1,
+    achievement2,
+    achievement3,
+    achievement4,
+    achievement5,
+    achievement6,
+    achievement7,
+    achievement8,
+  ];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/Cover-2.png
+  AssetGenImage get cover2 => const AssetGenImage('assets/images/Cover-2.png');
 
   /// File path: assets/images/accura-logo.png
   AssetGenImage get accuraLogo =>
@@ -49,9 +103,28 @@ class $AssetsImagesGen {
   AssetGenImage get apexLogo =>
       const AssetGenImage('assets/images/apex-logo.png');
 
+  /// File path: assets/images/bsns-wheel-logo.png
+  AssetGenImage get bsnsWheelLogo =>
+      const AssetGenImage('assets/images/bsns-wheel-logo.png');
+
   /// File path: assets/images/community-hero.png
   AssetGenImage get communityHero =>
       const AssetGenImage('assets/images/community-hero.png');
+
+  /// File path: assets/images/cover-1.png
+  AssetGenImage get cover1 => const AssetGenImage('assets/images/cover-1.png');
+
+  /// File path: assets/images/cover-3.png
+  AssetGenImage get cover3 => const AssetGenImage('assets/images/cover-3.png');
+
+  /// File path: assets/images/cover-4.png
+  AssetGenImage get cover4 => const AssetGenImage('assets/images/cover-4.png');
+
+  /// File path: assets/images/cover-5.png
+  AssetGenImage get cover5 => const AssetGenImage('assets/images/cover-5.png');
+
+  /// File path: assets/images/cover-6.png
+  AssetGenImage get cover6 => const AssetGenImage('assets/images/cover-6.png');
 
   /// File path: assets/images/elryad-logo.png
   AssetGenImage get elryadLogo =>
@@ -85,11 +158,33 @@ class $AssetsImagesGen {
   AssetGenImage get neopLogo =>
       const AssetGenImage('assets/images/neop-logo.png');
 
+  /// File path: assets/images/project-placeholder.png
+  AssetGenImage get projectPlaceholder =>
+      const AssetGenImage('assets/images/project-placeholder.png');
+
+  /// File path: assets/images/screen1.webp
+  AssetGenImage get screen1 =>
+      const AssetGenImage('assets/images/screen1.webp');
+
+  /// File path: assets/images/screen2.webp
+  AssetGenImage get screen2 =>
+      const AssetGenImage('assets/images/screen2.webp');
+
+  /// File path: assets/images/screen3.jpg
+  AssetGenImage get screen3 => const AssetGenImage('assets/images/screen3.jpg');
+
   /// List of all assets
   List<AssetGenImage> get values => [
+    cover2,
     accuraLogo,
     apexLogo,
+    bsnsWheelLogo,
     communityHero,
+    cover1,
+    cover3,
+    cover4,
+    cover5,
+    cover6,
     elryadLogo,
     flutterBird,
     flutterDesk,
@@ -98,6 +193,10 @@ class $AssetsImagesGen {
     magdsoftLogo,
     myPhoto,
     neopLogo,
+    projectPlaceholder,
+    screen1,
+    screen2,
+    screen3,
   ];
 }
 
@@ -116,6 +215,10 @@ class $AssetsLottieGen {
   LottieGenImage get handWave =>
       const LottieGenImage('assets/lottie/hand-wave.json');
 
+  /// File path: assets/lottie/hand-wave2.json
+  LottieGenImage get handWave2 =>
+      const LottieGenImage('assets/lottie/hand-wave2.json');
+
   /// File path: assets/lottie/portfolio.json
   LottieGenImage get portfolio =>
       const LottieGenImage('assets/lottie/portfolio.json');
@@ -129,6 +232,7 @@ class $AssetsLottieGen {
     achivements,
     developer,
     handWave,
+    handWave2,
     portfolio,
     spaceBoyDeveloper,
   ];
@@ -138,6 +242,7 @@ class Assets {
   const Assets._();
 
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsLottieGen lottie = $AssetsLottieGen();
 }
@@ -205,6 +310,78 @@ class AssetGenImage {
 
   ImageProvider provider({AssetBundle? bundle, String? package}) {
     return AssetImage(_assetName, bundle: bundle, package: package);
+  }
+
+  String get path => _assetName;
+
+  String get keyName => _assetName;
+}
+
+class SvgGenImage {
+  const SvgGenImage(this._assetName, {this.size, this.flavors = const {}})
+    : _isVecFormat = false;
+
+  const SvgGenImage.vec(this._assetName, {this.size, this.flavors = const {}})
+    : _isVecFormat = true;
+
+  final String _assetName;
+  final Size? size;
+  final Set<String> flavors;
+  final bool _isVecFormat;
+
+  _svg.SvgPicture svg({
+    Key? key,
+    bool matchTextDirection = false,
+    AssetBundle? bundle,
+    String? package,
+    double? width,
+    double? height,
+    BoxFit fit = BoxFit.contain,
+    AlignmentGeometry alignment = Alignment.center,
+    bool allowDrawingOutsideViewBox = false,
+    WidgetBuilder? placeholderBuilder,
+    String? semanticsLabel,
+    bool excludeFromSemantics = false,
+    _svg.SvgTheme? theme,
+    ColorFilter? colorFilter,
+    Clip clipBehavior = Clip.hardEdge,
+    @deprecated Color? color,
+    @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
+    @deprecated bool cacheColorFilter = false,
+  }) {
+    final _svg.BytesLoader loader;
+    if (_isVecFormat) {
+      loader = _vg.AssetBytesLoader(
+        _assetName,
+        assetBundle: bundle,
+        packageName: package,
+      );
+    } else {
+      loader = _svg.SvgAssetLoader(
+        _assetName,
+        assetBundle: bundle,
+        packageName: package,
+        theme: theme,
+      );
+    }
+    return _svg.SvgPicture(
+      loader,
+      key: key,
+      matchTextDirection: matchTextDirection,
+      width: width,
+      height: height,
+      fit: fit,
+      alignment: alignment,
+      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
+      placeholderBuilder: placeholderBuilder,
+      semanticsLabel: semanticsLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      colorFilter:
+          colorFilter ??
+          (color == null ? null : ColorFilter.mode(color, colorBlendMode)),
+      clipBehavior: clipBehavior,
+      cacheColorFilter: cacheColorFilter,
+    );
   }
 
   String get path => _assetName;

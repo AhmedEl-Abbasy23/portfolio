@@ -28,33 +28,35 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       child: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
+        titleSpacing: context.width > 512 ? null : 0,
         title: Padding(
-          padding: EdgeInsetsDirectional.only(top: 20),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              RiveAnimatedIcon(
-                riveIcon: RiveIcon.profile,
-                width: 50,
-                height: 30,
-                color: AppColors.whiteColor,
-                strokeWidth: 3,
-                loopAnimation: true,
-                onTap: () {},
-                onHover: (value) {},
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 8),
-                child: Text(
-                  'Ahmed Elabbasy',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
+                padding: EdgeInsetsDirectional.only(top: 20),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    RiveAnimatedIcon(
+                      riveIcon: RiveIcon.profile,
+                      width: 50,
+                      height: 30,
+                      color: AppColors.whiteColor,
+                      strokeWidth: 3,
+                      loopAnimation: true,
+                      onTap: () {},
+                      onHover: (value) {},
+                    ),
+                    if (context.width > 710)
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Text(
+                          'Ahmed Elabbasy',
+                          style: AppTextStyles.whiteW400S24PxStyle.copyWith(
+                            fontSize: 22.fs,
+                          ),
+                        ),
+                      ),
+                  ],
                 ),
               ),
-            ],
-          ),
-        ),
         actions: [
           Padding(
             padding: EdgeInsetsDirectional.only(end: 8, top: 18),
@@ -70,7 +72,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                         backgroundColor: currentPage == 0
                             ? AppColors.primaryColor.withValues(alpha: 0.6)
                             : AppColors.blackColor,
-                        width: 97,
+                        horizontalPadding: _getButtonPadding(context),
                         buttonText: 'Welcome',
                         onPressed: onWelcomeTapped,
                       ),
@@ -78,7 +80,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                         backgroundColor: currentPage == 1
                             ? AppColors.primaryColor.withValues(alpha: 0.6)
                             : AppColors.blackColor,
-                        width: 90,
+                        horizontalPadding: _getButtonPadding(context),
                         buttonText: 'Home',
                         onPressed: onHomeTapped,
                       ),
@@ -86,7 +88,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                         backgroundColor: currentPage == 2
                             ? AppColors.primaryColor.withValues(alpha: 0.6)
                             : AppColors.blackColor,
-                        width: 90,
+                        horizontalPadding: _getButtonPadding(context),
                         buttonText: 'About',
                         onPressed: onAboutTapped,
                       ),
@@ -94,7 +96,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                         backgroundColor: currentPage == 3
                             ? AppColors.primaryColor.withValues(alpha: 0.6)
                             : AppColors.blackColor,
-                        width: 94,
+                        horizontalPadding: _getButtonPadding(context),
                         buttonText: 'Portfolio',
                         onPressed: onPortfolioTapped,
                       ),
@@ -102,16 +104,23 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                         backgroundColor: currentPage == 4
                             ? AppColors.primaryColor.withValues(alpha: 0.6)
                             : AppColors.blackColor,
-                        width: 90,
+                        horizontalPadding: _getButtonPadding(context),
                         buttonText: 'Contact',
                         onPressed: onContactTapped,
                       ),
                       AppButton(
-                        isActive: false,
+                        isActive: true,
                         backgroundColor: AppColors.blackColor,
-                        width: 128,
+                        horizontalPadding: _getButtonPadding(context),
                         buttonText: 'Download CV',
-                        onPressed: () {},
+                        onPressed: () async {
+                          final uri = Uri.parse(
+                            'https://drive.google.com/uc?export=download&id=1wHWJjo3_3SbQotvK7-C6iZEtlBWpiCvW',
+                          );
+                          if (await canLaunchUrl(uri)) {
+                            await launchUrl(uri, mode: LaunchMode.externalApplication);
+                          }
+                        },
                       ),
                     ],
                   );
@@ -124,4 +133,11 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => Size.fromHeight(toolbarHeight ?? 70);
+}
+
+double _getButtonPadding(BuildContext context) {
+  if (Sizes.isMobile(context)) return 6;
+  if (Sizes.isTablet(context)) return 8;
+  if (Sizes.isDesktop(context)) return 12;
+  return 16; // Large Desktop
 }

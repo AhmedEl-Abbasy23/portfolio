@@ -44,7 +44,12 @@ class _TypingTextState extends State<TypingText> {
 
   @override
   Widget build(BuildContext context) {
-    return Text(_displayedText, style: widget.style);
+    return Text(
+      _displayedText,
+      style: widget.style,
+      maxLines: 2,
+      softWrap: true,
+    );
   }
 }
 

@@ -17,8 +17,7 @@ class BackWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return (ModalRoute.of(context)?.canPop ?? false)
-        ? IconButton(
+    return IconButton(
       padding: EdgeInsetsDirectional.only(top: 4, start: 24),
       onPressed: () {
         if (onBack != null) {
@@ -31,9 +30,8 @@ class BackWidget extends StatelessWidget {
         // icon ?? CupertinoIcons.chevron_back,
         Icons.arrow_back_ios,
         color: color ?? AppColors.whiteColor,
-        size: size ?? 16,
+        size: size ?? 28,
       ),
-    )
-        : SizedBox.shrink();
+    );
   }
 }

@@ -8,6 +8,9 @@ class AppColors {
   static const Color secondaryColor = Color(0xFF211B44);
   static const Color lightPrimaryColor = Color(0xFF6d48ba);
   static const Color light2PrimaryColor = Color(0xFF6952EB);
+  static const Color light3PrimaryColor = Color(0xFF9990C3);
+  static const Color light4PrimaryColor = Color(0xFFBAADC9);
+  static const Color light5PrimaryColor = Color(0xFFe4daff);
 
   // n refers to neutral color as figma design tells us
   static const Color n50Color = Color(0xFFe9faf7);
