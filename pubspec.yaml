@@ -60,6 +60,9 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/images/projects/
+    - assets/images/projects/pawsket/
+    - assets/images/projects/saaf_capital/
     - assets/icons/
 #    - assets/translations/
     - assets/lottie/

@@ -9,15 +9,23 @@ import 'package:lottie/src/composition.dart';
 class Assets {
   Assets._();
 
-  static const $AssetsFontsGen fonts = $AssetsFontsGen();
-  static const $AssetsIconsGen icons = $AssetsIconsGen();
-  static const $AssetsImagesGen images = $AssetsImagesGen();
-  static const $AssetsLottieGen lottie = $AssetsLottieGen();
+  static const String projects = 'assets/data/projects.json';
+  static const $AssetsAssetsGen assets = $AssetsAssetsGen();
+}
+
+class $AssetsAssetsGen {
+  const $AssetsAssetsGen();
+
+  final $AssetsFontsGen fonts = const $AssetsFontsGen();
+  final $AssetsIconsGen icons = const $AssetsIconsGen();
+  final $AssetsImagesGen images = const $AssetsImagesGen();
+  final $AssetsLottieGen lottie = const $AssetsLottieGen();
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  final $AssetsProjectsGen projects = const $AssetsProjectsGen();
   final AssetGenImage cover2 = const AssetGenImage('assets/images/Cover-2.png');
   final AssetGenImage accuraLogo =
       const AssetGenImage('assets/images/accura-logo.png');
@@ -25,6 +33,8 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/apex-logo.png');
   final AssetGenImage bsnsWheelLogo =
       const AssetGenImage('assets/images/bsns-wheel-logo.png');
+  final AssetGenImage comingSoon =
+      const AssetGenImage('assets/images/coming_soon.jpeg');
   final AssetGenImage communityHero =
       const AssetGenImage('assets/images/community-hero.png');
   final AssetGenImage cover1 = const AssetGenImage('assets/images/cover-1.png');
@@ -50,6 +60,79 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/neop-logo.png');
   final AssetGenImage projectPlaceholder =
       const AssetGenImage('assets/images/project-placeholder.png');
+}
+
+class $AssetsProjectsGen {
+  const $AssetsProjectsGen();
+
+  final $AssetsPawsketGen pawsket = const $AssetsPawsketGen();
+  final $AssetsSaafCapitalGen saafCapital = const $AssetsSaafCapitalGen();
+}
+
+class $AssetsPawsketGen {
+  const $AssetsPawsketGen();
+
+  final AssetGenImage cover =
+      const AssetGenImage('assets/images/projects/pawsket/cover.png');
+  final AssetGenImage screen1 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_1.png');
+  final AssetGenImage screen10 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_10.png');
+  final AssetGenImage screen11 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_11.png');
+  final AssetGenImage screen12 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_12.png');
+  final AssetGenImage screen13 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_13.png');
+  final AssetGenImage screen14 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_14.png');
+  final AssetGenImage screen15 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_15.png');
+  final AssetGenImage screen16 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_16.png');
+  final AssetGenImage screen2 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_2.png');
+  final AssetGenImage screen3 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_3.png');
+  final AssetGenImage screen4 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_4.png');
+  final AssetGenImage screen5 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_5.png');
+  final AssetGenImage screen6 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_6.png');
+  final AssetGenImage screen7 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_7.png');
+  final AssetGenImage screen8 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_8.png');
+  final AssetGenImage screen9 =
+      const AssetGenImage('assets/images/projects/pawsket/screen_9.png');
+}
+
+class $AssetsSaafCapitalGen {
+  const $AssetsSaafCapitalGen();
+
+  final AssetGenImage cover =
+      const AssetGenImage('assets/images/projects/saaf_capital/cover.png');
+  final AssetGenImage screen1 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_1.png');
+  final AssetGenImage screen10 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_10.png');
+  final AssetGenImage screen2 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_2.png');
+  final AssetGenImage screen3 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_3.png');
+  final AssetGenImage screen4 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_4.png');
+  final AssetGenImage screen5 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_5.png');
+  final AssetGenImage screen6 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_6.png');
+  final AssetGenImage screen7 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_7.png');
+  final AssetGenImage screen8 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_8.png');
+  final AssetGenImage screen9 =
+      const AssetGenImage('assets/images/projects/saaf_capital/screen_9.png');
 }
 
 class $AssetsIconsGen {
