@@ -1,0 +1,965 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "Pawsket",
+      "type": "E-commerce",
+      "description": "Egypt-based pet e-commerce platform for dogs, cats, birds & fish, offering products beyond food including accessories and grooming.",
+      "cover_image": "images/projects/pawsket/cover.png",
+      "images": [
+        "images/projects/pawsket/screen_1.png",
+        "images/projects/pawsket/screen_2.png",
+        "images/projects/pawsket/screen_3.png",
+        "images/projects/pawsket/screen_4.png",
+        "images/projects/pawsket/screen_5.png",
+        "images/projects/pawsket/screen_6.png",
+        "images/projects/pawsket/screen_7.png",
+        "images/projects/pawsket/screen_8.png",
+        "images/projects/pawsket/screen_9.png",
+        "images/projects/pawsket/screen_10.png",
+        "images/projects/pawsket/screen_11.png",
+        "images/projects/pawsket/screen_12.png",
+        "images/projects/pawsket/screen_13.png",
+        "images/projects/pawsket/screen_14.png",
+        "images/projects/pawsket/screen_15.png",
+        "images/projects/pawsket/screen_16.png"
+      ],
+      "problem": "Pet owners lack a unified platform for diverse pet products and services.",
+      "solution": "A full-featured pet e-commerce app with seamless browsing and ordering.",
+      "impact": "Improved shopping experience and increased user engagement.",
+      "features": [
+        "Chat",
+        "Cart",
+        "Maps",
+        "Auto-ship",
+        "Favorites",
+        "Notifications",
+        "Social Login",
+        "Filters"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Bloc",
+        "APIs",
+        "Firebase FCM",
+        "Real-time Chat"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "2",
+      "title": "SAAF Capital",
+      "type": "Fintech",
+      "description": "Next-generation investment platform in Saudi Arabia providing access to global and alternative assets, including private credit, venture capital, real estate, ETFs, stocks, and bonds.",
+      "cover_image": "images/projects/saaf_capital/cover.png",
+      "images": [
+        "images/projects/saaf_capital/screen_1.png",
+        "images/projects/saaf_capital/screen_2.png",
+        "images/projects/saaf_capital/screen_3.png",
+        "images/projects/saaf_capital/screen_4.png",
+        "images/projects/saaf_capital/screen_5.png",
+        "images/projects/saaf_capital/screen_6.png",
+        "images/projects/saaf_capital/screen_7.png",
+        "images/projects/saaf_capital/screen_8.png",
+        "images/projects/saaf_capital/screen_9.png",
+        "images/projects/saaf_capital/screen_10.png"
+      ],
+      "problem": "Investors lack easy access to global and alternative investment opportunities.",
+      "solution": "A fintech app providing diversified investments with personalized portfolios.",
+      "impact": "Enhanced investment accessibility and user trust.",
+      "features": [
+        "Portfolio Management",
+        "Real-time Data",
+        "Security",
+        "Shariah Compliance"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Bloc",
+        "APIs",
+        "Secure Auth",
+        "Real-time Data"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "3",
+      "title": "Fixxil",
+      "type": "Technician services",
+      "description": "A services platform connecting skilled technicians with customers, ensuring quality, safety, and continuous support through a modern app and website.",
+      "cover_image": null,
+      "images": [
+        "images/projects/fixxil/screen_1.png",
+        "images/projects/fixxil/screen_2.png",
+        "images/projects/fixxil/screen_3.png",
+        "images/projects/fixxil/screen_4.png",
+        "images/projects/fixxil/screen_5.png",
+        "images/projects/fixxil/screen_6.png",
+        "images/projects/fixxil/screen_7.png",
+        "images/projects/fixxil/screen_8.png",
+        "images/projects/fixxil/screen_9.png",
+        "images/projects/fixxil/screen_10.png"
+      ],
+      "problem": "Users struggle to find reliable technicians easily.",
+      "solution": "A platform connecting technicians with customers efficiently.",
+      "impact": "Improved service accessibility and satisfaction.",
+      "features": [
+        "Search",
+        "Booking",
+        "Chat",
+        "Notifications",
+        "Articles",
+        "Questions"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Bloc",
+        "APIs",
+        "Pusher",
+        "Firebase"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "4",
+      "title": "Sudan Care",
+      "type": "Medical Services",
+      "description": "For finding medicines in Sudan via image, prescription, or name search, and for searching for pharmacies, doctors, and hospitals too, with chat and voice call features.",
+      "cover_image": null,
+      "images": [
+        "images/projects/sudan_care/screen_1.png",
+        "images/projects/sudan_care/screen_2.png",
+        "images/projects/sudan_care/screen_3.png",
+        "images/projects/sudan_care/screen_4.png",
+        "images/projects/sudan_care/screen_5.png",
+        "images/projects/sudan_care/screen_6.png",
+        "images/projects/sudan_care/screen_7.png",
+        "images/projects/sudan_care/screen_8.png",
+        "images/projects/sudan_care/screen_9.png",
+        "images/projects/sudan_care/screen_10.png"
+      ],
+      "problem": "Difficulty in finding medicines and healthcare providers.",
+      "solution": "A medical search and communication platform.",
+      "impact": "Faster access to healthcare services.",
+      "features": [
+        "Search",
+        "Chat",
+        "Voice Calls"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Bloc",
+        "APIs",
+        "Pusher",
+        "Jitsi",
+        "Firebase"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "5",
+      "title": "Nano DHP Customers",
+      "type": "Medical E-commerce",
+      "description": "App for a company specializing in health products.",
+      "cover_image": null,
+      "images": [
+        "images/projects/nano_dhp_customers/screen_1.png",
+        "images/projects/nano_dhp_customers/screen_2.png",
+        "images/projects/nano_dhp_customers/screen_3.png",
+        "images/projects/nano_dhp_customers/screen_4.png",
+        "images/projects/nano_dhp_customers/screen_5.png",
+        "images/projects/nano_dhp_customers/screen_6.png",
+        "images/projects/nano_dhp_customers/screen_7.png",
+        "images/projects/nano_dhp_customers/screen_8.png",
+        "images/projects/nano_dhp_customers/screen_9.png",
+        "images/projects/nano_dhp_customers/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "6",
+      "title": "Nano DHP Doctors",
+      "type": "Medical Services",
+      "description": "Doctor app for communication with customers.",
+      "cover_image": null,
+      "images": [
+        "images/projects/nano_dhp_doctors/screen_1.png",
+        "images/projects/nano_dhp_doctors/screen_2.png",
+        "images/projects/nano_dhp_doctors/screen_3.png",
+        "images/projects/nano_dhp_doctors/screen_4.png",
+        "images/projects/nano_dhp_doctors/screen_5.png",
+        "images/projects/nano_dhp_doctors/screen_6.png",
+        "images/projects/nano_dhp_doctors/screen_7.png",
+        "images/projects/nano_dhp_doctors/screen_8.png",
+        "images/projects/nano_dhp_doctors/screen_9.png",
+        "images/projects/nano_dhp_doctors/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "7",
+      "title": "Borza",
+      "type": "E-commerce",
+      "description": "Premium fashion e-commerce platform in Libya offering a high-end  shopping experience for clothing and footwear, with seamless browsing,  exclusive offers, location-based delivery, and a smooth end-to-end purchasing journey.",
+      "cover_image": null,
+      "images": [
+        "images/projects/borza/screen_1.png",
+        "images/projects/borza/screen_2.png",
+        "images/projects/borza/screen_3.png",
+        "images/projects/borza/screen_4.png",
+        "images/projects/borza/screen_5.png",
+        "images/projects/borza/screen_6.png",
+        "images/projects/borza/screen_7.png",
+        "images/projects/borza/screen_8.png",
+        "images/projects/borza/screen_9.png",
+        "images/projects/borza/screen_10.png"
+      ],
+      "problem": "Users lack a reliable, high-quality online platform for discovering and purchasing fashion products with smooth delivery and location accuracy.",
+      "solution": "A full-featured e-commerce app providing curated fashion products, real-time location-based delivery, and a seamless shopping and checkout experience.",
+      "impact": "Enhanced user satisfaction, increased conversion rates, and improved delivery efficiency through accurate location services.",
+      "features": [
+        "Product Catalog & Offers"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "SOLID",
+        "Bloc State Management",
+        "RESTful APIs",
+        "Google Maps",
+        "Firebase FCM"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "8",
+      "title": "HR Plus",
+      "type": "HR System",
+      "description": "A powerful HR Management mobile system designed for internal company use, where employees join via invitation or QR code. It provides a complete employee profile including attendance, work status, leave balance, documents, contracts, salary details, and performance tracking. The system supports multi-role access (Employee, Manager, HR, Admin) with dynamic permissions and workflows. It also includes smart request handling with multi-step approval chains and a company-wide calendar for events and activities.",
+      "cover_image": null,
+      "images": [
+        "images/projects/hr_plus/screen_1.png",
+        "images/projects/hr_plus/screen_2.png",
+        "images/projects/hr_plus/screen_3.png",
+        "images/projects/hr_plus/screen_4.png",
+        "images/projects/hr_plus/screen_5.png",
+        "images/projects/hr_plus/screen_6.png",
+        "images/projects/hr_plus/screen_7.png",
+        "images/projects/hr_plus/screen_8.png",
+        "images/projects/hr_plus/screen_9.png",
+        "images/projects/hr_plus/screen_10.png"
+      ],
+      "problem": "Companies struggle with fragmented HR processes, manual approvals, and lack of real-time visibility into employee data, attendance, and requests.",
+      "solution": "A centralized HR mobile system that automates attendance tracking, employee management, approvals, and HR workflows with role-based access and structured request pipelines.",
+      "impact": "",
+      "features": [
+        "QR Onboarding",
+        "Full Employee Profile",
+        "Requests System with Attachments",
+        "Multi-level Approvals"
+      ],
+      "tech": [
+        "Firebase/API",
+        "Real-time Sync",
+        "Notifications",
+        "Role-based Access Control"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "9",
+      "title": "Nano DHP Supervisors",
+      "type": "Management Dashboard",
+      "description": "Supervisor app for marketer management.",
+      "cover_image": null,
+      "images": [
+        "images/projects/nano_dhp_supervisors/screen_1.png",
+        "images/projects/nano_dhp_supervisors/screen_2.png",
+        "images/projects/nano_dhp_supervisors/screen_3.png",
+        "images/projects/nano_dhp_supervisors/screen_4.png",
+        "images/projects/nano_dhp_supervisors/screen_5.png",
+        "images/projects/nano_dhp_supervisors/screen_6.png",
+        "images/projects/nano_dhp_supervisors/screen_7.png",
+        "images/projects/nano_dhp_supervisors/screen_8.png",
+        "images/projects/nano_dhp_supervisors/screen_9.png",
+        "images/projects/nano_dhp_supervisors/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Maps & Location Selection"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "10",
+      "title": "Nano Driver",
+      "type": "Delivery",
+      "description": "A dedicated application for transporting and delivering products from branches to customers.",
+      "cover_image": null,
+      "images": [
+        "images/projects/nano_driver/screen_1.png",
+        "images/projects/nano_driver/screen_2.png",
+        "images/projects/nano_driver/screen_3.png",
+        "images/projects/nano_driver/screen_4.png",
+        "images/projects/nano_driver/screen_5.png",
+        "images/projects/nano_driver/screen_6.png",
+        "images/projects/nano_driver/screen_7.png",
+        "images/projects/nano_driver/screen_8.png",
+        "images/projects/nano_driver/screen_9.png",
+        "images/projects/nano_driver/screen_10.png"
+      ],
+      "problem": "Inefficient delivery and tracking processes.",
+      "solution": "A logistics app for managing deliveries and routes.",
+      "impact": "Optimized delivery operations.",
+      "features": [
+        "Notifications & User Accounts"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Firebase"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "11",
+      "title": "Pawsket Delivery",
+      "type": "Delivery",
+      "description": "A dedicated application for transporting and delivering products from branches to customers.",
+      "cover_image": null,
+      "images": [
+        "images/projects/pawsket_delivery/screen_1.png",
+        "images/projects/pawsket_delivery/screen_2.png",
+        "images/projects/pawsket_delivery/screen_3.png",
+        "images/projects/pawsket_delivery/screen_4.png",
+        "images/projects/pawsket_delivery/screen_5.png",
+        "images/projects/pawsket_delivery/screen_6.png",
+        "images/projects/pawsket_delivery/screen_7.png",
+        "images/projects/pawsket_delivery/screen_8.png",
+        "images/projects/pawsket_delivery/screen_9.png",
+        "images/projects/pawsket_delivery/screen_10.png"
+      ],
+      "problem": "Pet owners lack a unified platform for diverse pet products and services.",
+      "solution": "A full-featured pet e-commerce app with seamless browsing and ordering.",
+      "impact": "Improved shopping experience and increased user engagement.",
+      "features": [
+        "Chat",
+        "Cart",
+        "Maps",
+        "Auto-ship",
+        "Favorites",
+        "Notifications",
+        "Social Login",
+        "Filters"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Bloc",
+        "APIs",
+        "Firebase FCM",
+        "Real-time Chat"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "12",
+      "title": "Maarod",
+      "type": "Marketplace",
+      "description": "A marketplace for buying and selling services, including real estate, cars, and equipment.",
+      "cover_image": null,
+      "images": [
+        "images/projects/maarod/screen_1.png",
+        "images/projects/maarod/screen_2.png",
+        "images/projects/maarod/screen_3.png",
+        "images/projects/maarod/screen_4.png",
+        "images/projects/maarod/screen_5.png",
+        "images/projects/maarod/screen_6.png",
+        "images/projects/maarod/screen_7.png",
+        "images/projects/maarod/screen_8.png",
+        "images/projects/maarod/screen_9.png",
+        "images/projects/maarod/screen_10.png"
+      ],
+      "problem": "Users need a unified marketplace for services and products.",
+      "solution": "A marketplace for buying and selling listings.",
+      "impact": "Increased transactions and user engagement.",
+      "features": [
+        "Ads",
+        "Search",
+        "Chat",
+        "Notifications"
+      ],
+      "tech": [
+        "Bloc",
+        "Firebase",
+        "Pusher"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "13",
+      "title": "Fixxil Dashboard",
+      "type": "Admin System",
+      "description": "Role Management, Comprehensive Service Area Control, Streamlined User Management, Efficient Order Management.",
+      "cover_image": null,
+      "images": [
+        "images/projects/fixxil_dashboard/screen_1.png",
+        "images/projects/fixxil_dashboard/screen_2.png",
+        "images/projects/fixxil_dashboard/screen_3.png",
+        "images/projects/fixxil_dashboard/screen_4.png",
+        "images/projects/fixxil_dashboard/screen_5.png",
+        "images/projects/fixxil_dashboard/screen_6.png",
+        "images/projects/fixxil_dashboard/screen_7.png",
+        "images/projects/fixxil_dashboard/screen_8.png",
+        "images/projects/fixxil_dashboard/screen_9.png",
+        "images/projects/fixxil_dashboard/screen_10.png"
+      ],
+      "problem": "Users struggle to find reliable technicians easily.",
+      "solution": "A platform connecting technicians with customers efficiently.",
+      "impact": "Improved service accessibility and satisfaction.",
+      "features": [
+        "Search",
+        "Booking",
+        "Chat",
+        "Notifications"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "Bloc",
+        "APIs",
+        "Pusher",
+        "Firebase"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "14",
+      "title": "Saudi Extreme Calendar",
+      "type": "Events",
+      "description": "A Saudi-based events discovery mobile app built with Flutter that helps users explore and attend exciting activities across the Kingdom. It aggregates events like camping, safaris, concerts, beaches, sports, horse riding, entertainment, and amusement parks with real-time discovery through map search, filters, and a monthly calendar. Users can browse featured events, save favorites, receive notifications, and share events easily for a seamless social experience.",
+      "cover_image": null,
+      "images": [
+        "images/projects/saudi_extreme_calendar/screen_1.png",
+        "images/projects/saudi_extreme_calendar/screen_2.png",
+        "images/projects/saudi_extreme_calendar/screen_3.png",
+        "images/projects/saudi_extreme_calendar/screen_4.png",
+        "images/projects/saudi_extreme_calendar/screen_5.png",
+        "images/projects/saudi_extreme_calendar/screen_6.png",
+        "images/projects/saudi_extreme_calendar/screen_7.png",
+        "images/projects/saudi_extreme_calendar/screen_8.png",
+        "images/projects/saudi_extreme_calendar/screen_9.png",
+        "images/projects/saudi_extreme_calendar/screen_10.png"
+      ],
+      "problem": "Users in Saudi Arabia struggle to discover relevant local events due to fragmented platforms, lack of centralized listings, and limited filtering or location-based discovery.",
+      "solution": "A unified events platform that organizes all activities in one place with smart filtering, map-based search, calendar view, and personalized recommendations.",
+      "impact": "Improves event discovery, boosts participation in local activities, enhances user engagement, and connects people more easily with entertainment across the Kingdom.",
+      "features": [
+        "Event Discovery By Category (camping",
+        "Concerts",
+        "Sports",
+        "Etc.)",
+        "Map-based Search & Filtering",
+        "Monthly Events Calendar",
+        "Favorites & Sharing",
+        "Notifications for New Events and Updates"
+      ],
+      "tech": [
+        "Backend API Integration",
+        "Google Maps Integration",
+        "Real-time Notifications System"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "15",
+      "title": "Qura'n Kareem",
+      "type": "Religious",
+      "description": "Qura’n Kareem is a beautifully crafted Flutter mobile application designed to provide an immersive and interactive Holy Qur’an experience. It allows users to read, listen, and memorize the Qur’an with ease, featuring verse-by-verse audio recitation with selectable reciters. Users can navigate through chapters, search for specific verses, set bookmarks, and play selected passages or the entire Qur’an continuously for seamless listening and memorization support.",
+      "cover_image": null,
+      "images": [
+        "images/projects/quran_kareem/screen_1.png",
+        "images/projects/quran_kareem/screen_2.png",
+        "images/projects/quran_kareem/screen_3.png",
+        "images/projects/quran_kareem/screen_4.png",
+        "images/projects/quran_kareem/screen_5.png",
+        "images/projects/quran_kareem/screen_6.png",
+        "images/projects/quran_kareem/screen_7.png",
+        "images/projects/quran_kareem/screen_8.png",
+        "images/projects/quran_kareem/screen_9.png",
+        "images/projects/quran_kareem/screen_10.png"
+      ],
+      "problem": "Many Qur’an apps lack smooth navigation, flexible audio control, and effective memorization tools in a single unified experience.",
+      "solution": "An all-in-one Qur’an platform that combines reading, high-quality audio recitation, smart navigation, and memorization features with personalized user control.",
+      "impact": "Enhances accessibility to the Qur’an, supports memorization and learning, and provides a calm, intuitive, and spiritually focused user experience.",
+      "features": [
+        "Verse-by-verse Audio Playback with Selectable Reciters",
+        "Full Qur’an Continuous Recitation",
+        "Search and Navigation By Verse or Surah",
+        "Bookmarking System",
+        "Memorization Support Mode"
+      ],
+      "tech": [
+        "API Integration for Qur’an Data",
+        "Audio Streaming",
+        "Caching System",
+        "Local Storage for Bookmarks",
+        "Offline Access"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "16",
+      "title": "Itikaf",
+      "type": "Religious Services Booking",
+      "description": "A comprehensive mobile platform that streamlines the Itikaf experience at the Grand Mosque, covering registration, place assignment, in-stay services, smart gate access, and real-time support — built for pilgrims, staff, and administrators.",
+      "cover_image": null,
+      "images": [
+        "images/projects/itikaf/screen_1.png",
+        "images/projects/itikaf/screen_2.png",
+        "images/projects/itikaf/screen_3.png",
+        "images/projects/itikaf/screen_4.png",
+        "images/projects/itikaf/screen_5.png",
+        "images/projects/itikaf/screen_6.png",
+        "images/projects/itikaf/screen_7.png",
+        "images/projects/itikaf/screen_8.png",
+        "images/projects/itikaf/screen_9.png",
+        "images/projects/itikaf/screen_10.png"
+      ],
+      "problem": "Managing Itikaf registration, place allocation, and on-ground services manually leads to overcrowding, lack of transparency, and poor pilgrim experience inside the Haram.",
+      "solution": "A unified app that automates Itikaf booking with eligibility screening, assigns locations dynamically based on capacity, provides GPS-guided navigation inside the Haram, and connects pilgrims to support services in real time.",
+      "impact": "Transforms the Itikaf experience through digital efficiency — reducing manual workload for staff, eliminating capacity conflicts, and giving pilgrims clarity and peace of mind from registration to check-out.",
+      "features": [
+        "Nafath SSO & Phone/ID Registration",
+        "Smart Eligibility Screening & Auto Acceptance",
+        "Capacity-based Location Assignment + Interactive Haram Map",
+        "GPS Indoor Navigation",
+        "In-stay Service Requests with Live Status Tracking",
+        "QR / NFC Smart Gate Check-in & Check-out",
+        "Live Support Chat (bot + Human)",
+        "Multi-language (AR, EN, UR, ID, FR) & Dark Mode",
+        "Employee & Admin Panel with KPI Dashboard",
+        "2FA + Role-based Access Control"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "BLoC",
+        "REST APIs",
+        "Firebase FCM",
+        "Google Maps SDK",
+        "NFC / QR Integration",
+        "2FA & Role-based Access Control",
+        "Cloud Sync & Reporting",
+        "Local Storage (offline Support)"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "17",
+      "title": "Qeyas",
+      "type": "E-learning",
+      "description": "E-learning app for students of all levels.",
+      "cover_image": null,
+      "images": [
+        "images/projects/qeyas/screen_1.png",
+        "images/projects/qeyas/screen_2.png",
+        "images/projects/qeyas/screen_3.png",
+        "images/projects/qeyas/screen_4.png",
+        "images/projects/qeyas/screen_5.png",
+        "images/projects/qeyas/screen_6.png",
+        "images/projects/qeyas/screen_7.png",
+        "images/projects/qeyas/screen_8.png",
+        "images/projects/qeyas/screen_9.png",
+        "images/projects/qeyas/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "18",
+      "title": "Accura Whats",
+      "type": "Enterprise Chat System",
+      "description": "Internal enterprise communication system enabling real-time messaging between employees, customers, and management, with monitoring capabilities for leadership oversight and interaction tracking.",
+      "cover_image": null,
+      "images": [
+        "images/projects/accura_whats/screen_1.png",
+        "images/projects/accura_whats/screen_2.png",
+        "images/projects/accura_whats/screen_3.png",
+        "images/projects/accura_whats/screen_4.png",
+        "images/projects/accura_whats/screen_5.png",
+        "images/projects/accura_whats/screen_6.png",
+        "images/projects/accura_whats/screen_7.png",
+        "images/projects/accura_whats/screen_8.png",
+        "images/projects/accura_whats/screen_9.png",
+        "images/projects/accura_whats/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "19",
+      "title": "Elagk Pharmacy",
+      "type": "Pharmacy Marketplace",
+      "description": "Platform connecting pharmacies to showcase their products, alongside customer and delivery apps for browsing, searching, and ordering medications seamlessly.",
+      "cover_image": null,
+      "images": [
+        "images/projects/elagk_pharmacy/screen_1.png",
+        "images/projects/elagk_pharmacy/screen_2.png",
+        "images/projects/elagk_pharmacy/screen_3.png",
+        "images/projects/elagk_pharmacy/screen_4.png",
+        "images/projects/elagk_pharmacy/screen_5.png",
+        "images/projects/elagk_pharmacy/screen_6.png",
+        "images/projects/elagk_pharmacy/screen_7.png",
+        "images/projects/elagk_pharmacy/screen_8.png",
+        "images/projects/elagk_pharmacy/screen_9.png",
+        "images/projects/elagk_pharmacy/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "20",
+      "title": "El-Ryad RMS",
+      "type": "Company System",
+      "description": "El-Ryad RMS is a powerful Flutter Web management system combining HR operations and project management in one unified platform. It allows team leads to create projects, assign tasks, set deadlines, and monitor real-time progress while also managing full HR functionalities like employee profiles, attendance, salaries, contracts, documents, and request workflows. The system supports multi-role access and structured approval chains, making it a complete enterprise-level solution for both workforce and project control.",
+      "cover_image": null,
+      "images": [
+        "images/projects/el_ryad_rms/screen_1.png",
+        "images/projects/el_ryad_rms/screen_2.png",
+        "images/projects/el_ryad_rms/screen_3.png",
+        "images/projects/el_ryad_rms/screen_4.png",
+        "images/projects/el_ryad_rms/screen_5.png",
+        "images/projects/el_ryad_rms/screen_6.png",
+        "images/projects/el_ryad_rms/screen_7.png",
+        "images/projects/el_ryad_rms/screen_8.png",
+        "images/projects/el_ryad_rms/screen_9.png",
+        "images/projects/el_ryad_rms/screen_10.png"
+      ],
+      "problem": "Companies and teams use separate tools for HR management and project tracking, leading to scattered data, poor coordination, and lack of unified visibility.",
+      "solution": "A single integrated system that merges HR operations with advanced project and task management, enabling complete control over both employees and work delivery.",
+      "impact": "Increases productivity, centralizes operations, improves transparency across teams, and streamlines both HR and project execution processes.",
+      "features": [
+        "Full HR System (attendance",
+        "Payroll",
+        "Contracts",
+        "Documents",
+        "Requests)",
+        "Project & Task Management (assignment",
+        "Deadlines",
+        "Progress Tracking)",
+        "Multi-level Approval Workflows",
+        "Real-time Updates and Team Collaboration"
+      ],
+      "tech": [
+        "Backend APIs",
+        "Real-time Database",
+        "Notifications",
+        "Role-based Access Control with Secure Architecture"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "21",
+      "title": "Qabilt Esltah",
+      "type": "Community Social Network",
+      "description": "A community-based social platform designed to connect members of the tribe, enabling them to stay connected and share life events and joyful occasions within a unified digital space.",
+      "cover_image": null,
+      "images": [
+        "images/projects/qabilt_esltah/screen_1.png",
+        "images/projects/qabilt_esltah/screen_2.png",
+        "images/projects/qabilt_esltah/screen_3.png",
+        "images/projects/qabilt_esltah/screen_4.png",
+        "images/projects/qabilt_esltah/screen_5.png",
+        "images/projects/qabilt_esltah/screen_6.png",
+        "images/projects/qabilt_esltah/screen_7.png",
+        "images/projects/qabilt_esltah/screen_8.png",
+        "images/projects/qabilt_esltah/screen_9.png",
+        "images/projects/qabilt_esltah/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "22",
+      "title": "Badraq",
+      "type": "WebView E-commerce",
+      "description": "WebView-based e-commerce platform for BADR Factory, allowing users to browse and purchase plumbing fixtures, bathtubs, and Jacuzzis with seamless navigation, search functionality, bilingual support, and smooth web-to-app experience.",
+      "cover_image": null,
+      "images": [
+        "images/projects/badraq/screen_1.png",
+        "images/projects/badraq/screen_2.png",
+        "images/projects/badraq/screen_3.png",
+        "images/projects/badraq/screen_4.png",
+        "images/projects/badraq/screen_5.png",
+        "images/projects/badraq/screen_6.png",
+        "images/projects/badraq/screen_7.png",
+        "images/projects/badraq/screen_8.png",
+        "images/projects/badraq/screen_9.png",
+        "images/projects/badraq/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "23",
+      "title": "U.A.E Store",
+      "type": "E-commerce",
+      "description": "UAE-based e-commerce platform offering a wide range of grocery products including fresh vegetables, beverages, and daily essentials, with smooth browsing, category filtering, and secure online shopping experience.",
+      "cover_image": null,
+      "images": [
+        "images/projects/u_a_e_store/screen_1.png",
+        "images/projects/u_a_e_store/screen_2.png",
+        "images/projects/u_a_e_store/screen_3.png",
+        "images/projects/u_a_e_store/screen_4.png",
+        "images/projects/u_a_e_store/screen_5.png",
+        "images/projects/u_a_e_store/screen_6.png",
+        "images/projects/u_a_e_store/screen_7.png",
+        "images/projects/u_a_e_store/screen_8.png",
+        "images/projects/u_a_e_store/screen_9.png",
+        "images/projects/u_a_e_store/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "24",
+      "title": "Treater Patient",
+      "type": "Medical Services",
+      "description": "Enables swift, dependable access to medical assistance and prescriptions anytime, anywhere.",
+      "cover_image": null,
+      "images": [
+        "images/projects/treater_patient/screen_1.png",
+        "images/projects/treater_patient/screen_2.png",
+        "images/projects/treater_patient/screen_3.png",
+        "images/projects/treater_patient/screen_4.png",
+        "images/projects/treater_patient/screen_5.png",
+        "images/projects/treater_patient/screen_6.png",
+        "images/projects/treater_patient/screen_7.png",
+        "images/projects/treater_patient/screen_8.png",
+        "images/projects/treater_patient/screen_9.png",
+        "images/projects/treater_patient/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "25",
+      "title": "Treater Doctor",
+      "type": "Medical Services",
+      "description": "Your dependable health companion, addressing a wide array of intriguing medical topics and inquiries.",
+      "cover_image": null,
+      "images": [
+        "images/projects/treater_doctor/screen_1.png",
+        "images/projects/treater_doctor/screen_2.png",
+        "images/projects/treater_doctor/screen_3.png",
+        "images/projects/treater_doctor/screen_4.png",
+        "images/projects/treater_doctor/screen_5.png",
+        "images/projects/treater_doctor/screen_6.png",
+        "images/projects/treater_doctor/screen_7.png",
+        "images/projects/treater_doctor/screen_8.png",
+        "images/projects/treater_doctor/screen_9.png",
+        "images/projects/treater_doctor/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "26",
+      "title": "Osrna",
+      "type": "Food Servces",
+      "description": "• A multi-vendor platform connecting users with home-based cooks and families offering homemade meals, enabling users to explore authentic dishes, place orders, and enjoy a trusted, community-driven food experience.",
+      "cover_image": null,
+      "images": [
+        "images/projects/osrna/screen_1.png",
+        "images/projects/osrna/screen_2.png",
+        "images/projects/osrna/screen_3.png",
+        "images/projects/osrna/screen_4.png",
+        "images/projects/osrna/screen_5.png",
+        "images/projects/osrna/screen_6.png",
+        "images/projects/osrna/screen_7.png",
+        "images/projects/osrna/screen_8.png",
+        "images/projects/osrna/screen_9.png",
+        "images/projects/osrna/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "27",
+      "title": "Bank Teller",
+      "type": "Appointment Management",
+      "description": "Effortlessly schedule and track your bank appointments.",
+      "cover_image": null,
+      "images": [
+        "images/projects/bank_teller/screen_1.png",
+        "images/projects/bank_teller/screen_2.png",
+        "images/projects/bank_teller/screen_3.png",
+        "images/projects/bank_teller/screen_4.png",
+        "images/projects/bank_teller/screen_5.png",
+        "images/projects/bank_teller/screen_6.png",
+        "images/projects/bank_teller/screen_7.png",
+        "images/projects/bank_teller/screen_8.png",
+        "images/projects/bank_teller/screen_9.png",
+        "images/projects/bank_teller/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    },
+    {
+      "id": "28",
+      "title": "UReview",
+      "type": "Review Platform",
+      "description": "Platform for exploring, rating, and reviewing businesses and services, with user feedback, filtering, and reliable insights for better decisions.",
+      "cover_image": null,
+      "images": [
+        "images/projects/ureview/screen_1.png",
+        "images/projects/ureview/screen_2.png",
+        "images/projects/ureview/screen_3.png",
+        "images/projects/ureview/screen_4.png",
+        "images/projects/ureview/screen_5.png",
+        "images/projects/ureview/screen_6.png",
+        "images/projects/ureview/screen_7.png",
+        "images/projects/ureview/screen_8.png",
+        "images/projects/ureview/screen_9.png",
+        "images/projects/ureview/screen_10.png"
+      ],
+      "problem": "Users face challenges in accessing and managing services efficiently.",
+      "solution": "A mobile solution simplifying operations and user experience.",
+      "impact": "Improved efficiency and engagement.",
+      "features": [
+        "Core App Features with Seamless UX"
+      ],
+      "tech": [
+        "Clean Architecture",
+        "APIs",
+        "State Management"
+      ],
+      "preview_url": null
+    }
+  ]
+}
