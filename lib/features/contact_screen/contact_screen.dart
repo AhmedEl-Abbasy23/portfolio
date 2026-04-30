@@ -11,7 +11,6 @@ class ContactScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        (context.height * 0.1).ph,
         /// Header
         Stack(
           alignment: Alignment.center,
@@ -112,10 +111,10 @@ class ContactScreen extends StatelessWidget {
   void _handleTap(int index) {
     switch (index) {
       case 0:
-        launchUrl(Uri.parse('https://linkedin.com/in/YOUR_USERNAME'));
+        launchUrl(Uri.parse('https://linkedin.com/in/ahmed-elabbasy23'));
         break;
       case 1:
-        launchUrl(Uri.parse('https://github.com/YOUR_USERNAME'));
+        launchUrl(Uri.parse('https://github.com/AhmedEl-Abbasy23'));
         break;
       case 2:
         launchUrl(Uri.parse('mailto:ahmed.elabbasy23@gmail.com'));

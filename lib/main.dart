@@ -8,6 +8,7 @@ void main() async {
 
   await setupDI();
   await CursorManager.init();
+  await PortfolioData.loadProjects();
   runApp(MyApp(appRouter: AppRouter()));
 }
 

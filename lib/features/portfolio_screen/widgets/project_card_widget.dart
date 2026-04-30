@@ -77,7 +77,7 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
     return Stack(
       children: [
         Image.asset(
-          widget.project!.coverImage,
+          widget.project!.coverImage ?? Assets.images.comingSoon.path,
           fit: BoxFit.cover,
           width: double.infinity,
           height: double.infinity,
@@ -100,9 +100,10 @@ class _ProjectCardWidgetState extends State<ProjectCardWidget> {
                   ),
                 ),
                 Text(
-                  'Mobile App',
+                  widget.project!.type,
                   style: AppTextStyles.whiteW400S16PxStyle.copyWith(
                     color: AppColors.light3PrimaryColor,
+                    fontSize: 14.fs,
                   ),
                 ),
               ],

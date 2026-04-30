@@ -13,6 +13,16 @@ import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:lottie/lottie.dart' as _lottie;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
+class $AssetsDataGen {
+  const $AssetsDataGen();
+
+  /// File path: assets/data/projects.json
+  String get projects => 'assets/data/projects.json';
+
+  /// List of all assets
+  List<String> get values => [projects];
+}
+
 class $AssetsFontsGen {
   const $AssetsFontsGen();
 
@@ -107,6 +117,10 @@ class $AssetsImagesGen {
   AssetGenImage get bsnsWheelLogo =>
       const AssetGenImage('assets/images/bsns-wheel-logo.png');
 
+  /// File path: assets/images/coming_soon.jpeg
+  AssetGenImage get comingSoon =>
+      const AssetGenImage('assets/images/coming_soon.jpeg');
+
   /// File path: assets/images/community-hero.png
   AssetGenImage get communityHero =>
       const AssetGenImage('assets/images/community-hero.png');
@@ -162,23 +176,13 @@ class $AssetsImagesGen {
   AssetGenImage get projectPlaceholder =>
       const AssetGenImage('assets/images/project-placeholder.png');
 
-  /// File path: assets/images/screen1.webp
-  AssetGenImage get screen1 =>
-      const AssetGenImage('assets/images/screen1.webp');
-
-  /// File path: assets/images/screen2.webp
-  AssetGenImage get screen2 =>
-      const AssetGenImage('assets/images/screen2.webp');
-
-  /// File path: assets/images/screen3.jpg
-  AssetGenImage get screen3 => const AssetGenImage('assets/images/screen3.jpg');
-
   /// List of all assets
   List<AssetGenImage> get values => [
     cover2,
     accuraLogo,
     apexLogo,
     bsnsWheelLogo,
+    comingSoon,
     communityHero,
     cover1,
     cover3,
@@ -194,9 +198,6 @@ class $AssetsImagesGen {
     myPhoto,
     neopLogo,
     projectPlaceholder,
-    screen1,
-    screen2,
-    screen3,
   ];
 }
 
@@ -241,6 +242,7 @@ class $AssetsLottieGen {
 class Assets {
   const Assets._();
 
+  static const $AssetsDataGen data = $AssetsDataGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();

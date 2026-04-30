@@ -12,30 +12,26 @@ class ProjectDetailsScreen extends StatelessWidget {
       backgroundColor: AppColors.blackColor,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
+            GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: FaIcon(
+                  FontAwesomeIcons.xmark,
+                  color: Colors.white,
+                  size: 28,
+                ),
+              ),
+            ),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     /// 1 — Screens Preview + dots (all inside WaveCarousel)
-                    Stack(
-                      alignment: AlignmentDirectional.topEnd,
-                      children: [
-                        WaveCarousel(images: project.images),
-                        GestureDetector(
-                          onTap: () => Navigator.pop(context),
-                          child: Padding(
-                            padding: const EdgeInsets.all(16),
-                            child: FaIcon(
-                              FontAwesomeIcons.xmark,
-                              color: Colors.white,
-                              size: 28,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    WaveCarousel(images: project.images),
 
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 14, 20, 0),
@@ -44,10 +40,10 @@ class ProjectDetailsScreen extends StatelessWidget {
                         children: [
                           /// 2 — Tag + Title
                           Text(
-                            'Flutter App · 2024',
+                            project.type.toUpperCase(),
                             style: AppTextStyles.whiteW400S16PxStyle.copyWith(
-                              fontSize: 11,
-                              color: Colors.white38,
+                              fontSize: 12.fs,
+                              color: Colors.greenAccent,
                               letterSpacing: 1.5,
                             ),
                           ),
@@ -68,8 +64,8 @@ class ProjectDetailsScreen extends StatelessWidget {
                           Text(
                             project.description,
                             style: AppTextStyles.whiteW400S18PxStyle.copyWith(
-                              color: Colors.white60,
-                              fontSize: 13,
+                              color: Colors.white,
+                              fontSize: 13.fs,
                               height: 1.5,
                             ),
                           ),
@@ -140,8 +136,8 @@ class ProjectDetailsScreen extends StatelessWidget {
 
   Widget _sectionLabel(String text) => Text(
     text.toUpperCase(),
-    style: const TextStyle(
-      fontSize: 9,
+    style: TextStyle(
+      fontSize: 9.fs,
       letterSpacing: 2.2,
       color: Colors.white24,
       fontWeight: FontWeight.w600,
@@ -156,7 +152,7 @@ class ProjectDetailsScreen extends StatelessWidget {
     ),
     child: Text(
       label,
-      style: const TextStyle(fontSize: 11, color: Colors.white60),
+      style: TextStyle(fontSize: 11.fs, color: Colors.white60),
     ),
   );
 
@@ -169,7 +165,7 @@ class ProjectDetailsScreen extends StatelessWidget {
     ),
     child: Text(
       label,
-      style: const TextStyle(fontSize: 11, color: Color(0xFFA78BFA)),
+      style: TextStyle(fontSize: 11.fs, color: Color(0xFFA78BFA)),
     ),
   );
 
@@ -200,7 +196,7 @@ class ProjectDetailsScreen extends StatelessWidget {
                 style: TextStyle(
                   color:       color,
                   fontWeight:  FontWeight.bold,
-                  fontSize:    10,
+                  fontSize:    10.fs,
                   letterSpacing: 1.5,
                 ),
               ),
@@ -208,7 +204,7 @@ class ProjectDetailsScreen extends StatelessWidget {
               Text(
                 text,
                 style: AppTextStyles.whiteW400S18PxStyle.copyWith(
-                  fontSize: 13,
+                  fontSize: 13.fs,
                   color:    Colors.white70,
                   height:   1.4,
                 ),
@@ -240,7 +236,7 @@ class _CtaBar extends StatelessWidget {
         children: [
           Text(
             'Interested in something like this?',
-            style: const TextStyle(color: Colors.white38, fontSize: 11),
+            style: TextStyle(color: Colors.white38, fontSize: 11.fs),
           ),
           10.ph,
           // ── buttons: centered, natural width, not full-width ──
@@ -250,7 +246,7 @@ class _CtaBar extends StatelessWidget {
               AppButton(
                 buttonText: 'Preview',
                 textStyle: AppTextStyles.whiteW400S18PxStyle.copyWith(
-                  fontSize: 13,
+                  fontSize: 13.fs,
                   color: Colors.white54,
                 ),
                 backgroundColor: Colors.transparent,
@@ -265,7 +261,7 @@ class _CtaBar extends StatelessWidget {
               AppButton(
                 buttonText: "LET'S BUILD SOMETHING",
                 textStyle: AppTextStyles.whiteW400S18PxStyle.copyWith(
-                  fontSize: 13,
+                  fontSize: 13.fs,
                   fontWeight: FontWeight.bold,
                 ),
                 backgroundColor: const Color(0xFF7C3AED),

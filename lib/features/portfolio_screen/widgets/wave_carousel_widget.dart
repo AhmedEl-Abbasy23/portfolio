@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../../exports.dart';
 
-/// Wave carousel with built-in dots indicator.
-/// Usage: WaveCarousel(images: project.images)
 class WaveCarousel extends StatefulWidget {
   const WaveCarousel({super.key, required this.images});
 
@@ -17,30 +15,30 @@ class WaveCarousel extends StatefulWidget {
 class _WaveCarouselState extends State<WaveCarousel>
     with SingleTickerProviderStateMixin {
   // ── constants ────────────────────────────────────────────────
-  static const double _itemWidth    = 150.0;
-  static const double _itemSpacing  = 14.0;
+  // wider item so Figma portrait screenshots show properly
+  static const double _itemWidth    = 160.0;
+  static const double _itemSpacing  = 12.0;
   static const double _stride       = _itemWidth + _itemSpacing * 2;
-  static const double _waveAmp      = 38.0;
-  static const double _waveFreq     = 0.025;
+  static const double _waveAmp      = 36.0;
+  static const double _waveFreq     = 0.022;
   static const double _autoSpeed    = 0.7;
   static const double _momentumDecay = 0.90;
-  static const double _containerH   = 380.0;
+  // taller container — Figma screens are portrait (≈16:9 or 19.5:9)
+  static const double _containerH   = 420.0;
 
   // ── state ────────────────────────────────────────────────────
   late AnimationController _ticker;
-  double _scrollX   = 0;
-  bool   _hovered   = false;
-  bool   _dragging  = false;
-  double _dragStartX      = 0;
+  double _scrollX        = 0;
+  bool   _hovered        = false;
+  bool   _dragging       = false;
+  double _dragStartX     = 0;
   double _dragScrollStart = 0;
-  double _velocity        = 0;
-  double _prevPointerX    = 0;
+  double _velocity       = 0;
+  double _prevPointerX   = 0;
+  int    _activeIndex    = 0;
 
   late List<String> _loopedImages;
   late double       _loopLength;
-
-  /// index of the image closest to viewport center
-  int _activeIndex = 0;
 
   @override
   void initState() {
@@ -75,20 +73,18 @@ class _WaveCarouselState extends State<WaveCarousel>
       _scrollX = _scrollX % _loopLength;
       if (_scrollX < 0) _scrollX += _loopLength;
 
-      // which image slot is closest to the viewport center
       _activeIndex =
           ((_scrollX + _containerH * 0.5) / _stride).round() %
               widget.images.length;
     });
   }
 
-  // ── gestures ─────────────────────────────────────────────────
   void _onPanStart(DragStartDetails d) {
-    _dragging       = true;
-    _dragStartX     = d.globalPosition.dx;
+    _dragging        = true;
+    _dragStartX      = d.globalPosition.dx;
     _dragScrollStart = _scrollX;
-    _prevPointerX   = d.globalPosition.dx;
-    _velocity       = 0;
+    _prevPointerX    = d.globalPosition.dx;
+    _velocity        = 0;
   }
 
   void _onPanUpdate(DragUpdateDetails d) {
@@ -97,15 +93,13 @@ class _WaveCarouselState extends State<WaveCarousel>
     _prevPointerX = d.globalPosition.dx;
     setState(() {
       _scrollX =
-          (_dragScrollStart + (_dragStartX - d.globalPosition.dx)) %
-              _loopLength;
+          (_dragScrollStart + (_dragStartX - d.globalPosition.dx)) % _loopLength;
       if (_scrollX < 0) _scrollX += _loopLength;
     });
   }
 
   void _onPanEnd(DragEndDetails _) => _dragging = false;
 
-  // ── build ─────────────────────────────────────────────────────
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -124,7 +118,6 @@ class _WaveCarouselState extends State<WaveCarousel>
               child: ClipRect(
                 child: _WaveTrack(
                   images:          _loopedImages,
-                  originalCount:   widget.images.length,
                   scrollX:         _scrollX,
                   itemWidth:       _itemWidth,
                   itemSpacing:     _itemSpacing,
@@ -136,8 +129,9 @@ class _WaveCarouselState extends State<WaveCarousel>
               ),
             ),
 
-            // ── dots indicator ──────────────────────────────────
             const SizedBox(height: 10),
+
+            // dots
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(widget.images.length, (i) {
@@ -157,6 +151,7 @@ class _WaveCarouselState extends State<WaveCarousel>
                 );
               }),
             ),
+
             const SizedBox(height: 4),
           ],
         ),
@@ -169,7 +164,6 @@ class _WaveCarouselState extends State<WaveCarousel>
 class _WaveTrack extends StatelessWidget {
   const _WaveTrack({
     required this.images,
-    required this.originalCount,
     required this.scrollX,
     required this.itemWidth,
     required this.itemSpacing,
@@ -180,16 +174,16 @@ class _WaveTrack extends StatelessWidget {
   });
 
   final List<String> images;
-  final int          originalCount;
-  final double       scrollX;
-  final double       itemWidth;
-  final double       itemSpacing;
-  final double       stride;
-  final double       waveAmplitude;
-  final double       waveFrequency;
-  final double       containerHeight;
+  final double scrollX;
+  final double itemWidth;
+  final double itemSpacing;
+  final double stride;
+  final double waveAmplitude;
+  final double waveFrequency;
+  final double containerHeight;
 
-  static const _baseHeights = [260.0, 225.0, 275.0, 240.0, 290.0, 230.0];
+  // portrait aspect ratio ≈ 9:19.5 → height = width * (19.5/9)
+  static const double _aspectRatio = 19.5 / 9;
 
   @override
   Widget build(BuildContext context) {
@@ -208,23 +202,24 @@ class _WaveTrack extends StatelessWidget {
         final phase = i * stride * waveFrequency + scrollX * waveFrequency;
         final yOff  = sin(phase) * waveAmplitude;
 
-        // distance from viewport centre → scale focal card up
+        // focal scaling
         final distFromCenter = (x + itemWidth / 2 - centerX).abs();
         final maxDist        = viewWidth * 0.6;
         final t              = (1 - (distFromCenter / maxDist).clamp(0.0, 1.0));
-        final scale          = 0.82 + 0.18 * t;   // 0.82 → 1.00
-        final opacity        = 0.45 + 0.55 * t;   // 0.45 → 1.00
+        final scale          = 0.78 + 0.22 * t;   // 0.78 → 1.00
+        final opacity        = 0.40 + 0.60 * t;   // 0.40 → 1.00
 
-        final baseH = _baseHeights[imgIndex % _baseHeights.length];
-        final itemH = baseH * scale;
-        final top   = (containerHeight - itemH) / 2 + yOff;
+        final scaledW = itemWidth * scale;
+        // height driven by portrait aspect ratio, not arbitrary list
+        final scaledH = (scaledW * _aspectRatio).clamp(0.0, containerHeight * 0.95);
+        final top     = (containerHeight - scaledH) / 2 + yOff;
 
         items.add(
           Positioned(
             left:   x + itemSpacing,
             top:    top,
-            width:  itemWidth * scale,
-            height: itemH,
+            width:  scaledW,
+            height: scaledH,
             child: Opacity(
               opacity: opacity,
               child: _CarouselCard(imagePath: images[imgIndex]),
@@ -256,7 +251,7 @@ class _CarouselCard extends StatelessWidget {
         ),
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(20),
         child: Image.asset(
           imagePath,
           width:  double.infinity,
@@ -265,7 +260,7 @@ class _CarouselCard extends StatelessWidget {
           errorBuilder: (_, __, ___) => Container(
             decoration: BoxDecoration(
               color:        Colors.white10,
-              borderRadius: BorderRadius.circular(18),
+              borderRadius: BorderRadius.circular(20),
             ),
             child: const Center(
               child: Icon(

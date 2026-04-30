@@ -48,6 +48,8 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/my-photo.png');
   final AssetGenImage neopLogo =
       const AssetGenImage('assets/images/neop-logo.png');
+  final AssetGenImage projectPlaceholder =
+      const AssetGenImage('assets/images/project-placeholder.png');
 }
 
 class $AssetsIconsGen {

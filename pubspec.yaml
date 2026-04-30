@@ -64,6 +64,7 @@ flutter:
 #    - assets/translations/
     - assets/lottie/
     - assets/fonts/
+    - assets/data/projects.json
 
   fonts:
     - family: Ping
