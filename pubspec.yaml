@@ -60,9 +60,34 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/images/projects/
+    - assets/images/projects/accura_whats/
+    - assets/images/projects/badraq/
+    - assets/images/projects/bank_teller/
+    - assets/images/projects/borza/
+    - assets/images/projects/el_ryad_rms/
+    - assets/images/projects/elagk_pharmacy/
+    - assets/images/projects/fixxil/
+    - assets/images/projects/fixxil_dashboard/
+    - assets/images/projects/hr_plus/
+    - assets/images/projects/itikaf/
+    - assets/images/projects/maarod/
+    - assets/images/projects/nano_dhp_customers/
+    - assets/images/projects/nano_dhp_doctors/
+    - assets/images/projects/nano_dhp_supervisors/
+    - assets/images/projects/nano_driver/
+    - assets/images/projects/osrna/
     - assets/images/projects/pawsket/
+    - assets/images/projects/pawsket_delivery/
+    - assets/images/projects/qabilt_esltah/
+    - assets/images/projects/qeyas/
+    - assets/images/projects/quran_kareem/
     - assets/images/projects/saaf_capital/
+    - assets/images/projects/saudi_extreme_calendar/
+    - assets/images/projects/sudan_care/
+    - assets/images/projects/treater_doctor/
+    - assets/images/projects/treater_patient/
+    - assets/images/projects/u_a_e_store/
+    - assets/images/projects/ureview/
     - assets/icons/
     - assets/lottie/
     - assets/fonts/

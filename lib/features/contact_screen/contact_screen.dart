@@ -109,19 +109,16 @@ class ContactScreen extends StatelessWidget {
 
   /// Handle actions
   void _handleTap(int index) {
-    switch (index) {
-      case 0:
-        launchUrl(Uri.parse('https://linkedin.com/in/ahmed-elabbasy23'));
-        break;
-      case 1:
-        launchUrl(Uri.parse('https://github.com/AhmedEl-Abbasy23'));
-        break;
-      case 2:
-        launchUrl(Uri.parse('mailto:ahmed.elabbasy23@gmail.com'));
-        break;
-      case 3:
-        launchUrl(Uri.parse('https://wa.me/201288278807'));
-        break;
-    }
+    final urls = [
+      'https://linkedin.com/in/ahmed-elabbasy23',
+      'https://github.com/AhmedEl-Abbasy23',
+      'mailto:ahmed.elabbasy23@gmail.com',
+      'https://wa.me/201288278807',
+    ];
+
+    launchUrl(
+      Uri.parse(urls[index]),
+      mode: LaunchMode.externalApplication,
+    );
   }
 }

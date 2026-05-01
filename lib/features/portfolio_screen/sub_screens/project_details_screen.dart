@@ -112,9 +112,8 @@ class ProjectDetailsScreen extends StatelessWidget {
                           Wrap(
                             spacing: 6,
                             runSpacing: 6,
-                            children: project.tech
-                                .map((e) => _techChip(e))
-                                .toList(),
+                            children:
+                                project.tech.map((e) => _techChip(e)).toList(),
                           ),
 
                           28.ph,
@@ -135,54 +134,54 @@ class ProjectDetailsScreen extends StatelessWidget {
   }
 
   Widget _sectionLabel(String text) => Text(
-    text.toUpperCase(),
-    style: TextStyle(
-      fontSize: 9.fs,
-      letterSpacing: 2.2,
-      color: Colors.white24,
-      fontWeight: FontWeight.w600,
-    ),
-  );
+        text.toUpperCase(),
+        style: TextStyle(
+          fontSize: 9.fs,
+          letterSpacing: 2.2,
+          color: Colors.white24,
+          fontWeight: FontWeight.w600,
+        ),
+      );
 
   Widget _featureChip(String label) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(20),
-      border: Border.all(color: Colors.white12),
-    ),
-    child: Text(
-      label,
-      style: TextStyle(fontSize: 11.fs, color: Colors.white60),
-    ),
-  );
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: Colors.white12),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(fontSize: 11.fs, color: Colors.white60),
+        ),
+      );
 
   Widget _techChip(String label) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-    decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(20),
-      border: Border.all(color: const Color(0x447C3AED)),
-      color: const Color(0x117C3AED),
-    ),
-    child: Text(
-      label,
-      style: TextStyle(fontSize: 11.fs, color: Color(0xFFA78BFA)),
-    ),
-  );
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: const Color(0x447C3AED)),
+          color: const Color(0x117C3AED),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(fontSize: 11.fs, color: Color(0xFFA78BFA)),
+        ),
+      );
 
   Widget _storyItem({
     required String title,
     required String text,
-    required Color  color,
+    required Color color,
   }) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          width:  3,
+          width: 3,
           height: 42,
           margin: const EdgeInsets.only(top: 2),
           decoration: BoxDecoration(
-            color:        color,
+            color: color,
             borderRadius: BorderRadius.circular(2),
           ),
         ),
@@ -194,9 +193,9 @@ class ProjectDetailsScreen extends StatelessWidget {
               Text(
                 title.toUpperCase(),
                 style: TextStyle(
-                  color:       color,
-                  fontWeight:  FontWeight.bold,
-                  fontSize:    10.fs,
+                  color: color,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 10.fs,
                   letterSpacing: 1.5,
                 ),
               ),
@@ -205,8 +204,8 @@ class ProjectDetailsScreen extends StatelessWidget {
                 text,
                 style: AppTextStyles.whiteW400S18PxStyle.copyWith(
                   fontSize: 13.fs,
-                  color:    Colors.white70,
-                  height:   1.4,
+                  color: Colors.white70,
+                  height: 1.4,
                 ),
               ),
             ],
@@ -253,11 +252,25 @@ class _CtaBar extends StatelessWidget {
                 borderWidth: 1,
                 fontSize: 13.fs,
                 horizontalPadding: 24,
-                onPressed: () {},
+                onPressed: () {
+                  if (project.previewUrl != null) {
+                    launchUrl(Uri.parse(project.previewUrl!));
+                  } else {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text(
+                          'Preview not available for this project.',
+                          style: TextStyle(
+                            fontSize: 12.fs,
+                            color: Colors.white70,
+                          ),
+                        ),
+                      ),
+                    );
+                  }
+                },
               ),
-
               16.pw,
-
               AppButton(
                 buttonText: "LET'S BUILD SOMETHING",
                 textStyle: AppTextStyles.whiteW400S18PxStyle.copyWith(
@@ -269,7 +282,10 @@ class _CtaBar extends StatelessWidget {
                 fontSize: 13.fs,
                 horizontalPadding: 24,
                 onPressed: () {
-                  launchUrl(Uri.parse('https://wa.me/201288278807'));
+                  launchUrl(
+                    Uri.parse('https://wa.me/201288278807'),
+                    mode: LaunchMode.externalApplication,
+                  );
                 },
               ),
             ],

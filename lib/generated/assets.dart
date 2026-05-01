@@ -65,8 +65,62 @@ class $AssetsImagesGen {
 class $AssetsProjectsGen {
   const $AssetsProjectsGen();
 
+  final $AssetsFixxilGen fixxil = const $AssetsFixxilGen();
   final $AssetsPawsketGen pawsket = const $AssetsPawsketGen();
   final $AssetsSaafCapitalGen saafCapital = const $AssetsSaafCapitalGen();
+}
+
+class $AssetsFixxilGen {
+  const $AssetsFixxilGen();
+
+  final AssetGenImage cover =
+      const AssetGenImage('assets/images/projects/fixxil/cover.png');
+  final AssetGenImage screen1 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_1.png');
+  final AssetGenImage screen10 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_10.png');
+  final AssetGenImage screen11 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_11.png');
+  final AssetGenImage screen12 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_12.png');
+  final AssetGenImage screen13 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_13.png');
+  final AssetGenImage screen14 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_14.png');
+  final AssetGenImage screen15 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_15.png');
+  final AssetGenImage screen16 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_16.png');
+  final AssetGenImage screen17 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_17.png');
+  final AssetGenImage screen18 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_18.png');
+  final AssetGenImage screen19 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_19.png');
+  final AssetGenImage screen2 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_2.png');
+  final AssetGenImage screen20 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_20.png');
+  final AssetGenImage screen21 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_21.png');
+  final AssetGenImage screen22 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_22.png');
+  final AssetGenImage screen23 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_23.png');
+  final AssetGenImage screen3 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_3.png');
+  final AssetGenImage screen4 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_4.png');
+  final AssetGenImage screen5 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_5.png');
+  final AssetGenImage screen6 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_6.png');
+  final AssetGenImage screen7 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_7.png');
+  final AssetGenImage screen8 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_8.png');
+  final AssetGenImage screen9 =
+      const AssetGenImage('assets/images/projects/fixxil/screen_9.png');
 }
 
 class $AssetsPawsketGen {
