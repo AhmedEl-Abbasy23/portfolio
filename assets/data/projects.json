@@ -87,7 +87,7 @@
       "title": "Fixxil",
       "type": "Technician services",
       "description": "A services platform connecting skilled technicians with customers, ensuring quality, safety, and continuous support through a modern app and website.",
-      "cover_image": null,
+      "cover_image": "assets/images/projects/fixxil/cover.png",
       "images": [
         "assets/images/projects/fixxil/screen_1.png",
         "assets/images/projects/fixxil/screen_2.png",
